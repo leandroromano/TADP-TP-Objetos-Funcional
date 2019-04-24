@@ -10,6 +10,7 @@ class Object
       raise "No se cumplen todas las invariantes!!!"
     end
   end
+
   def self.before_and_after_each_call(before, after)
     @overriden_methods = [:initialize]
     @befores ||= []
@@ -22,12 +23,13 @@ class Object
         aux = self.new.method(method) #unbound
         define_method method do |*args|
           self.class.instance_eval do
-            @befores.each{|p| p.call}
+            @befores.reverse_each{|p| p.call}
           end
-          aux.call(*args)
+          retorno = aux.call(*args)
           self.class.instance_eval do
             @afters.each{|p| p.call}
           end
+          retorno
         end
       end
     end
@@ -48,7 +50,7 @@ class Ejemplo
   invariante { atributo < 10 }
 
   def m
-    self.atributo -= 1
+    self.atributo
   end
 
   def a

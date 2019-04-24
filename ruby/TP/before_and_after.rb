@@ -11,12 +11,13 @@ class Object
         aux = self.new.method(method) #unbound
         define_method method do |*args|
           self.class.instance_eval do
-            @befores.each{|p| p.call}
+            @befores.reverse_each{|p| p.call}
           end
-          aux.call(*args)
+          retorno = aux.call(*args)
           self.class.instance_eval do
             @afters.each{|p| p.call}
           end
+          retorno
         end
       end
     end
