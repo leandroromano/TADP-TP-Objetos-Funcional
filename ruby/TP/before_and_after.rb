@@ -1,6 +1,6 @@
 class Object
   def self.before_and_after_each_call(before, after)
-    @overriden_methods = []
+    @overriden_methods = [:initialize]
     @befores ||= []
     @befores.push(before)
     @afters ||= []
