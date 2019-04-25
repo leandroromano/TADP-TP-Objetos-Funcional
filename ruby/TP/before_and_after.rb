@@ -1,42 +1,27 @@
-class Object
-  def self.before_and_after_each_call(before, after)
-    @overriden_methods = [:initialize]
-    @befores ||= []
-    @befores.push(before)
-    @afters ||= []
-    @afters.push(after)
-    self.define_singleton_method :method_added do |method|
-      if !@overriden_methods.include? method
-        @overriden_methods.push method
-        aux = self.instance_method(method) #unbound
-        define_method method do |*args|
-          self.class.instance_eval do
-            @befores.reverse_each{|p| p.call}
-          end
-          retorno = aux.call(*args)
-          self.class.instance_eval do
-            @afters.each{|p| p.call}
-          end
-          retorno
-        end
+class Provider
+
+  def self.before_and_after_each_call(before_proc, after_proc) 
+    self.instance_methods(false).each do |method|
+      aux = self.new.method(method.to_s)
+      self.define_method(method.to_s) do
+        before_proc.call 
+        aux.call
+        after_proc.call
       end
     end
   end
+
+  
+end
+
+class MyClass < Provider
+  def foo
+    pp "bar"
+  end
+
+  before_and_after_each_call(proc { pp "Entrando"}, proc {pp "Saliendo"})
+
 end
 
 
-class Ejemplo
-  before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
-  before_and_after_each_call(proc {puts "Estoy entrandoaa"}, proc {puts "Estoy saliendoaaa"})
-
-  def sumar n1, n2
-    n1 + n2
-  end
-
-  def saludar
-    puts "Hola"
-  end
-end
-
-
-
+MyClass.new.foo
