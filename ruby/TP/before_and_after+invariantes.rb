@@ -6,13 +6,14 @@ class Object
 
   def chequear_invariantes
     invariantes = self.class.class_eval {@invariantes}
+    invariantes ||= []
     if !invariantes.all? {|condicion| self.instance_eval &condicion}
       raise "No se cumplen todas las invariantes!!!"
     end
   end
 
   def self.before_and_after_each_call(before, after)
-    @overriden_methods = [:initialize]
+    @overriden_methods = []
     @befores ||= []
     @befores.push(before)
     @afters ||= []
@@ -38,7 +39,7 @@ end
 
 class Ejemplo
   before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
-  before_and_after_each_call(proc{chequear_invariantes}, proc{chequear_invariantes})
+  before_and_after_each_call(proc{self.chequear_invariantes}, proc{self.chequear_invariantes})
   attr_accessor :atributo
 
   def initialize
