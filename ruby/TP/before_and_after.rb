@@ -8,7 +8,7 @@ class Object
     self.define_singleton_method :method_added do |method|
       if !@overriden_methods.include? method
         @overriden_methods.push method
-        aux = self.new.method(method) #unbound
+        aux = self.instance_method(method) #unbound
         define_method method do |*args|
           self.class.instance_eval do
             @befores.reverse_each{|p| p.call}
@@ -28,8 +28,13 @@ end
 class Ejemplo
   before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
   before_and_after_each_call(proc {puts "Estoy entrandoaa"}, proc {puts "Estoy saliendoaaa"})
+
+  def sumar n1, n2
+    n1 + n2
+  end
+
   def saludar
-    puts "Entre"
+    puts "Hola"
   end
 end
 

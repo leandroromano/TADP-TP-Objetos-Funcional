@@ -20,12 +20,12 @@ class Object
     self.define_singleton_method :method_added do |method|
       if !@overriden_methods.include? method
         @overriden_methods.push method
-        aux = self.new.method(method) #unbound
+        aux = self.instance_method(method) #unbound
         define_method method do |*args|
           self.class.instance_eval do
             @befores.reverse_each{|p| p.call}
           end
-          retorno = aux.call(*args)
+          retorno = aux.bind(self).call(*args)
           self.class.instance_eval do
             @afters.each{|p| p.call}
           end
@@ -38,7 +38,7 @@ end
 
 class Ejemplo
   before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
-  #before_and_after_each_call(proc{chequear_invariantes}, proc{chequear_invariantes})
+  before_and_after_each_call(proc{chequear_invariantes}, proc{chequear_invariantes})
   attr_accessor :atributo
 
   def initialize
