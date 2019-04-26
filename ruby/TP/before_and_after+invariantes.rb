@@ -5,15 +5,17 @@ class Object
   end
 
   def chequear_invariantes
-    invariantes = self.class.class_eval {@invariantes}
+    invariantes = self.class.instance_variable_get :@invariantes
     invariantes ||= []
-    if !invariantes.all? {|condicion| self.instance_eval &condicion}
+    if !invariantes.all? {|condicion| instance_eval &condicion}
       raise "No se cumplen todas las invariantes!!!"
+    else
+      true
     end
   end
 
   def self.before_and_after_each_call(before, after)
-    @overriden_methods = []
+    @overriden_methods = [:initialize]
     @befores ||= []
     @befores.push(before)
     @afters ||= []
@@ -23,13 +25,9 @@ class Object
         @overriden_methods.push method
         aux = self.instance_method(method) #unbound
         define_method method do |*args|
-          self.class.instance_eval do
-            @befores.reverse_each{|p| p.call}
-          end
+          self.class.instance_variable_get(:@befores).reverse_each{|p| instance_eval &p}
           retorno = aux.bind(self).call(*args)
-          self.class.instance_eval do
-            @afters.each{|p| p.call}
-          end
+          self.class.instance_variable_get(:@afters).each{|p| instance_eval &p}
           retorno
         end
       end
@@ -38,9 +36,10 @@ class Object
 end
 
 class Ejemplo
-  before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
-  before_and_after_each_call(proc{self.chequear_invariantes}, proc{self.chequear_invariantes})
   attr_accessor :atributo
+
+  before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
+  before_and_after_each_call(proc{send :chequear_invariantes}, proc{send :chequear_invariantes})
 
   def initialize
     self.atributo = 3
