@@ -17,7 +17,7 @@ class Object
     @befores.push(before) # agrego proc "before"
     @afters ||= [] # inicializo por default como "[]"
     @afters.push(after) # agrego proc "after"
-    self.define_singleton_method :method_added do |method|
+    self.define_singleton_method :method_added do |method| # modifico el metodo de clase "method_added"
       if !@overriden_methods.include? method # control para que haya un bucle de definicion y redefinicion infinito
         @overriden_methods.push method # idem ^^^
         aux = self.instance_method(method) #unbound. Guardo el metodo original
