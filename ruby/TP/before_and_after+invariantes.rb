@@ -1,4 +1,6 @@
 class Object
+
+  ############# invariantes ############### begin
   def self.invariante(&invariante)
     @invariantes ||= [] # inicializo por default como "[]"
     @invariantes.push(invariante) # agrego proc "condicion"
@@ -13,7 +15,9 @@ class Object
   def invariantes_ok? # verifica que se cumplan todas las invariantes
     self.class.instance_variable_get(:@invariantes).all? {|invariante| instance_eval &invariante}
   end
-
+  ############# invariantes ############### end
+  #
+  ############# before_and_after_each_call ############### begin
   def self.before_and_after_each_call(before, after)
     ensure_initialized_overriden_methods_befores_and_afters
     @befores.push(before) # agrego proc "before"
@@ -26,7 +30,7 @@ class Object
     end
   end
 
-  def self.ensure_initialized_overriden_methods_befores_and_afters # Evito que cualquiera sea nil de no haber sido inicializado previamente en otra llamada a "before_and_after_each_call"
+  def self.ensure_initialized_overriden_methods_befores_and_afters # Me aseguro que esten inicializados como listas  para que no sean nil
     @overriden_methods = [:initialize] # inicializo. Incluyo "initialize": algunas invariantes involucran atributos que se inicializan en este metodo. Evito que initialize se redefina para que no ocurra un error al tratar con atributos dentro de invariantes no inicializados
     @befores ||= [] # inicializo por default como "[]"
     @afters ||= [] # inicializo por default como "[]"
@@ -43,19 +47,24 @@ class Object
     define_method method do |*args| # redefino el metodo original con el mismo nombre y sus argumentos
       chequear_invariantes  # chequeo de invariantes a priori
       befores.reverse_each{|p| instance_eval &p} # evaluo todos los procs "before" dentro del contexto de la instancia correspondiente
-      retorno = aux.bind(self).call(*args) # bindeo y ejecuto el metodo original; guardo el valor de retorno
+      retorno = aux.bind(self).call(*args) # bindeo y ejecuto el metodo original. Guardo el valor de retorno
       afters.each{|p| instance_eval &p} # evaluo todos los procs "after" dentro del contexto de la instancia correspondiente
       chequear_invariantes # chequeo de invariantes a posteriori
       retorno # retorno original
     end
   end
+  ############# before_and_after_each_call ############### end
 end
+
+
+
 
 # un ejemplo para testear
 class Ejemplo
   attr_accessor :atributo
 
   before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
+  before_and_after_each_call(proc {self.atributo -= 1}, proc {puts "Chau"})
 
   def initialize
     self.atributo = 3
