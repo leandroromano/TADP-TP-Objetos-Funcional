@@ -34,6 +34,7 @@ class Object
     @overriden_methods = [:initialize] # inicializo. Incluyo "initialize": algunas invariantes involucran atributos que se inicializan en este metodo. Evito que initialize se redefina para que no ocurra un error al tratar con atributos dentro de invariantes no inicializados
     @befores ||= [] # inicializo por default como "[]"
     @afters ||= [] # inicializo por default como "[]"
+    @invariantes ||= []
   end
 
   def self.overriden_method? method
