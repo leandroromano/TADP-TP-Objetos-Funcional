@@ -33,26 +33,3 @@ class Object
     end
   end
 end
-
-
-
-
-# un ejemplo para testear
-class Ejemplo
-  attr_accessor :atributo
-
-  before_and_after_each_call(proc {puts "Estoy entrando"}, proc {puts "Estoy saliendo"})
-  before_and_after_each_call(proc {self.atributo -= 1}, proc {puts "Chau"})
-
-  def initialize
-    self.atributo = 3
-  end
-
-  def m
-    self.atributo
-  end
-
-  def a
-    self.atributo += 5
-  end
-end
