@@ -17,9 +17,14 @@ class Module
   end
 
   def ensure_initialized_overriden_methods_befores_and_afters # Me aseguro que esten inicializados como listas  para que no sean nil
+    if superclass.instance_variable_defined? :@overriden_methods # ¿ La superclase usó un before_and_after?
+      @befores = superclass.instance_variable_get :@befores # para que la subclase conosca los befores, definidos por la superclase
+      @afters = superclass.instance_variable_get :@afters # para que la subclase conosca los afters, definidos por la superclase
+    elsif
+      @befores ||= [] # inicializo por default
+      @afters ||= [] # inicializo por default
+    end
     @overriden_methods = [:initialize] # inicializo. Incluyo "initialize": algunas invariantes involucran atributos que se inicializan en este metodo. Evito que initialize se redefina para que no ocurra un error al tratar con atributos dentro de invariantes no inicializados
-    @befores ||= [] # inicializo por default como "[]"
-    @afters ||= [] # inicializo por default como "[]"
   end
 
   def overriden_method? method
