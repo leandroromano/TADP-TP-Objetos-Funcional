@@ -10,6 +10,7 @@ class Module
   def invariante(&invariante)
     @invariantes ||= [] # inicializo por default como "[]"
     @invariantes.push(invariante) # agrego proc "condicion"
+    before_and_after_each_call(proc {self.chequear_invariantes}, proc {self.chequear_invariantes})
   end
 end
 
@@ -21,6 +22,7 @@ class Object
   end
 
   def invariantes_ok? # verifica que se cumplan todas las invariantes
-    self.class.instance_variable_get(:@invariantes).all? {|invariante| instance_eval &invariante}
+    invariantes = self.class.instance_variable_get(:@invariantes) || []
+    invariantes.all? {|invariante| instance_eval &invariante}
   end
 end

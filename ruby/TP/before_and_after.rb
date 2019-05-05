@@ -1,10 +1,12 @@
+#require_relative "./invariantes"
+
 class Module
   def before_and_after_each_call(before, after)
     ensure_initialized_overriden_methods_befores_and_afters
     @befores.push(before) # agrego proc "before"
     @afters.push(after) # agrego proc "after"
     define_singleton_method :method_added do |method| # modifico el metodo de clase "method_added"
-      if @overriden_methods.nil?    # solo va a pasar cuando se trate de una subclase de la clase que definio el before_and_after
+      if @overriden_methods.nil? # solo va a pasar cuando se trate de una subclase de la clase que definio el before_and_after
         @overriden_methods = [:initialize] # al no contener ningun otro metodo, permite que la subclase pueda sobrescribir_metodos de la superclase y estos sean modificados por el before_and_after como es debido
         @befores = superclass.instance_variable_get :@befores # para que la subclase conosca los befores, definidos por la superclase
         @afters = superclass.instance_variable_get :@afters # para que la subclase conosca los afters, definidos por la superclase
@@ -37,9 +39,12 @@ class Module
     afters = @afters
     define_method method do |*args| # redefino el metodo original con el mismo nombre y sus argumentos
       befores.reverse_each{|p| instance_eval &p} # evaluo todos los procs "before" dentro del contexto de la instancia correspondiente
+      #self.chequear_invariantes
       retorno = aux.bind(self).call(*args) # bindeo y ejecuto el metodo original. Guardo el valor de retorno
+      #self.chequear_invariantes
       afters.each{|p| instance_eval &p} # evaluo todos los procs "after" dentro del contexto de la instancia correspondiente
       retorno # retorno original
     end
   end
+  
 end
