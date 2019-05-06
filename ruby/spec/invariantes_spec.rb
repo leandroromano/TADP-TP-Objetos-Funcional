@@ -25,4 +25,6 @@ describe "invariantes" do
     @un_objeto = Ejemplo.new 1
     expect{@un_objeto.m}.to raise_exception InvarianteSinCumplir
   end
+
+
 end

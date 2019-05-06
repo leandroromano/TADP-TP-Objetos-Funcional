@@ -10,7 +10,10 @@ class Module
   def invariante(&invariante)
     @invariantes ||= [] # inicializo por default como "[]"
     @invariantes.push(invariante) # agrego proc "condicion"
-    before_and_after_each_call(proc {self.chequear_invariantes}, proc {self.chequear_invariantes})
+    unless @invariantes_chequeando
+      before_and_after_each_call(proc {}, proc {self.chequear_invariantes})
+      @invariantes_chequeando = true
+    end
   end
 end
 
