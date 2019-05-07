@@ -1,3 +1,4 @@
+
 class Module
   def pre(&precondicion)
     @pre = precondicion
