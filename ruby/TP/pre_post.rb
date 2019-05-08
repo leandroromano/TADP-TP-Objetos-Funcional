@@ -11,10 +11,10 @@ class Module
   end
 
   def llamar_before_and_after
-    #unless @pres_and_posts_chequeando
-    #before_and_after_each_call(proc{self.check_pre ???}, proc {self.check_post ???})
-    #@pres_and_posts_chequeando = true
-    #end
+    unless @pres_and_posts_chequeando
+    before_and_after_each_call(proc{|metodo| self.check_pre metodo}, proc {|metodo, retorno| self.check_post metodo, retorno})
+    @pres_and_posts_chequeando = true
+    end
   end
 
   def set_pres_and_posts method
