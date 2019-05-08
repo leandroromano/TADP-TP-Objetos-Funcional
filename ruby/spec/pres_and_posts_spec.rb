@@ -4,7 +4,6 @@ require_relative "../TP/invariantes"
 describe 'pres_and_posts' do
   class Ejemplo
     attr_accessor :atributo
-    before_and_after_each_call(proc{},proc{})
     def initialize valor
       self.atributo = valor
     end

@@ -41,11 +41,11 @@ class Module
     afters = @afters
     set_pres_and_posts method
     define_method method do |*args| # redefino el metodo original con el mismo nombre y sus argumentos
-      befores.reverse_each{|p| instance_eval &p} # evaluo todos los procs "before" dentro del contexto de la instancia correspondiente
-      check_pre method
+      befores.reverse_each{|p| instance_exec method, &p} # evaluo todos los procs "before" dentro del contexto de la instancia correspondiente
+      #check_pre method
       retorno = aux.bind(self).call(*args) # bindeo y ejecuto el metodo original. Guardo el valor de retorno
-      check_post method, retorno
-      afters.each{|p| instance_eval &p} # evaluo todos los procs "after" dentro del contexto de la instancia correspondiente
+      #check_post method, retorno
+      afters.each{|p| instance_exec method, retorno, &p} # evaluo todos los procs "after" dentro del contexto de la instancia correspondiente
       retorno # retorno original
     end
   end
