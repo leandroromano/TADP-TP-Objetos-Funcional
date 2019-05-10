@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative "../TP/invariantes"
+require_relative "../main/invariantes"
 
 describe 'pres_and_posts' do
   class Ejemplo
@@ -38,9 +38,22 @@ describe 'pres_and_posts' do
     expect{un_objeto.a}.not_to raise_exception
   end
 
-  it "Una clase que hereda los metodos de otra con precondiciones deberia checkear que estas se cumplan" do
-    class Ejemplo2 < Ejemplo; end
-    un_objeto = Ejemplo2.new(0)
-    expect{un_objeto.a}.to raise_exception NoSeCumplePrecondicion
+  context "Para el metodo 'initialize'" do
+    class Ejemplo2
+      attr_accessor :atributo
+
+      post {self.atributo != 0}
+      def initialize value
+        self.atributo = value
+      end
+    end
+
+    it "Deberia lanzar una excepcion cuando no se cumple la postcondicion del metodo 'initialize'" do
+      expect{Ejemplo2.new 0}.to raise_exception NoSeCumplePostcondicion
+    end
+
+    it "No deberia lanzar una excepcion cuando se cumple la postcondicion del metodo 'initialize'" do
+      expect{Ejemplo2.new 2}.not_to raise_exception
+    end
   end
 end
