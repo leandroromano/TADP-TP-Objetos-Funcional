@@ -28,9 +28,9 @@ class Module
       if method == :initialize   # hago una excepcion para "initialize", asi se le puden poner pres y posts.
         set_pres_and_posts method
         define_method method do |*args|
-          self.check_pre method
           retorno = aux.bind(self).call(*args)
           self.check_post method, retorno
+          self.chequear_invariantes
           retorno
         end
       else

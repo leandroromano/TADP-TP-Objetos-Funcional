@@ -25,4 +25,8 @@ describe "invariantes" do
     @un_objeto = Ejemplo.new 1
     expect{@un_objeto.m}.to raise_exception InvarianteSinCumplir
   end
+
+  it "Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion" do
+    expect{Ejemplo.new -1}.to raise_exception InvarianteSinCumplir
+  end
 end
