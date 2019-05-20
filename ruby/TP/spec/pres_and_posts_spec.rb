@@ -56,4 +56,24 @@ describe 'pres_and_posts' do
       expect{Ejemplo2.new 2}.not_to raise_exception
     end
   end
+
+  context 'Permite el uso de parametros especificos del metodo' do
+    class Ejemplo3
+      pre {divisor != 0}
+      post {|resultado| resultado * divisor == dividendo}
+      def dividir(dividendo, divisor)
+        dividendo / divisor
+      end
+    end
+
+    it "No deberia lanzar una excepcion cuando los parametros del metodo, cumplen la postcondicion" do
+      un_objeto = Ejemplo3.new
+      expect {un_objeto.dividir(4,2)}.not_to raise_exception
+    end
+
+    it "Deberia lanzar una excepcion cuando uno de los parametros del metodo, no cumple la precondicion" do
+      un_objeto = Ejemplo3.new
+      expect {un_objeto.dividir(4, 0)}.to raise_exception NoSeCumplePrecondicion
+    end
+  end
 end

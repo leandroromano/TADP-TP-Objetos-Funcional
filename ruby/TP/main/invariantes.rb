@@ -25,7 +25,7 @@ class Object
   end
 
   def invariantes_ok? # verifica que se cumplan todas las invariantes
-    invariantes = self.class.instance_variable_get(:@invariantes) || []
+    invariantes = self.instance.class.instance_variable_get(:@invariantes) || []
     invariantes.all? {|invariante| instance_eval &invariante}
   end
 end

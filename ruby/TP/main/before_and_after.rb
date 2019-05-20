@@ -14,7 +14,7 @@ class Module
   def ensure_initialized_overriden_methods_befores_and_afters # Me aseguro que esten inicializados como listas  para que no sean nil
     @befores ||= [] # inicializo por default
     @afters ||= [] # inicializo por default
-    @overriden_methods = [] # inicializo. Incluyo "initialize": algunas invariantes involucran atributos que se inicializan en este metodo. Evito que initialize se redefina para que no ocurra un error al tratar con atributos dentro de invariantes no inicializados
+    @overriden_methods = []
   end
 
   def overriden_method? method
@@ -25,12 +25,15 @@ class Module
     if !overriden_method? method # control para que haya un bucle de definicion y redefinicion infinito
       @overriden_methods.push method # agrego metodo a la lista de metodos sobreescritos
       aux = self.instance_method(method) #unbound. Guardo el metodo original
+      params = self.instance_method(method).parameters.map{|list| list[1]}
       if method == :initialize   # hago una excepcion para "initialize", asi se le puden poner pres y posts.
         set_pres_and_posts method
         define_method method do |*args|
+          method_params = params.zip(args).to_h
+          context = Context.new method_params, self
           retorno = aux.bind(self).call(*args)
-          self.check_post method, retorno
-          self.chequear_invariantes
+          context.check_post method, retorno
+          context.chequear_invariantes
           retorno
         end
       else
@@ -38,9 +41,11 @@ class Module
         afters = @afters
         set_pres_and_posts method
         define_method method do |*args| # redefino el metodo original con el mismo nombre y sus argumentos
-          befores.reverse_each{|p| instance_exec method, &p} # evaluo todos los procs "before" dentro del contexto de la instancia correspondiente
+          method_params = params.zip(args).to_h
+          context = Context.new method_params, self
+          befores.reverse_each{|p| context.instance_exec method, &p} # evaluo todos los procs "before" dentro del contexto de la instancia correspondiente
           retorno = aux.bind(self).call(*args) # bindeo y ejecuto el metodo original. Guardo el valor de retorno
-          afters.each{|p| instance_exec method, retorno, &p} # evaluo todos los procs "after" dentro del contexto de la instancia correspondiente
+          afters.each{|p| context.instance_exec method, retorno, &p} # evaluo todos los procs "after" dentro del contexto de la instancia correspondiente
           retorno # retorno original
         end
       end
