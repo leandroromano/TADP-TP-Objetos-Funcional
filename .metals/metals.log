@@ -8,3 +8,170 @@ INFO  no build target: using presentation compiler with only scala-library
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
 INFO  shutting down Metals
+INFO  time: initialize in 0.63s
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+INFO  no build target: using presentation compiler with only scala-library
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1282, 1282, 1292)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+INFO  shutting down Metals
+INFO  time: initialize in 6.41s
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+INFO  no build target: using presentation compiler with only scala-library
+jun 14, 2019 1:59:09 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 14, 2019 1:59:09 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+jun 14, 2019 2:10:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 433
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+jun 14, 2019 2:23:55 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1670)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1670)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1680)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1680)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1670)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1671)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1656, 1656, 1671)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 715, 715, 731)
+jun 14, 2019 2:30:30 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+jun 14, 2019 2:32:07 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1935, 1935, 1945)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2016)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2009)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2010)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2011)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2013)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2014)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2018)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2018)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2018)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2002, 2002, 2018)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2041, 2041, 2055)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2041, 2041, 2048)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2041, 2041, 2055)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2041, 2041, 2049)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2041, 2041, 2051)
+jun 14, 2019 2:50:35 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in scala.collection.mutable.ListBuffer[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1137, 1137, 1153)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+jun 14, 2019 2:56:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1242
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+jun 14, 2019 2:57:20 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1278
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 732, 732, 748)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2031, 2031, 2047)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1933, 1933, 1943)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1933, 1933, 1943)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 1933, 1933, 1943)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+jun 14, 2019 3:13:43 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+jun 14, 2019 3:14:38 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+jun 14, 2019 3:14:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1522
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+jun 14, 2019 3:37:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1927
+jun 14, 2019 3:37:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 1929
+jun 14, 2019 3:42:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2109
+jun 14, 2019 3:43:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2123
+jun 14, 2019 3:43:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2124
+jun 14, 2019 3:43:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2125
+jun 14, 2019 3:43:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2127
+jun 14, 2019 3:43:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2129
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala in List[Expression]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/src/main/scala/MusicParser.scala, 2548, 2548, 2564)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+jun 14, 2019 4:15:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3425
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\src\main\scala\MusicParser.scala
+INFO  shutting down Metals
