@@ -31,7 +31,7 @@ class MusicParser(input: String) {
         else {
           val expression: ComplexExpression = ComplexExpression()
           try {
-            var next2: Char = parseChar()
+            var next2: Char = ' '
 
             while (next2 != ')') {
               expression.add(parseExpression())

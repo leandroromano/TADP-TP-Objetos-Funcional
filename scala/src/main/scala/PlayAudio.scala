@@ -1,5 +1,5 @@
 object PlayAudio extends App {
-  val sariaSong = "3x(C D E F G A B) C C C"
+  val song = "3x(A CC DD EE FF GG AA BB)"
 
-  AudioPlayer.reproducir(sariaSong)
+  AudioPlayer.reproducir(song)
 }
