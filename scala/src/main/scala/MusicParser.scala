@@ -33,3 +33,17 @@ class MusicParser(input: String) {
 class ParserException(reason: String) extends Exception(reason)
 class EOIParserException extends ParserException("reached end of input")
 class NotANoteException(val read: Char) extends ParserException(s"Expected [A|B|C|D|E|F|G] but got $read")
+
+trait Exprecion {
+  def toPartitura: List[Nota]
+}
+case class Multiplicacion(multiplicador: Integer, contenido: Exprecion){
+  def toPartitura: List[Nota] = {
+    var aux: List[Nota] = List()
+    (1 to multiplicador).foreach{ _ => aux = aux ::: contenido.toPartitura }
+    return aux
+  }
+}
+case class Simple(contenido: List[Nota]){
+  def toPartitura: List[Nota] = contenido
+}
