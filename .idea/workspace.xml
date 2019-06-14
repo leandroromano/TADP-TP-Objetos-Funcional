@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="283eb8ec-9c90-465a-9d93-fb5d4917f006" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/before_and_after.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/before_and_after.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/before_after_v2.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/before_and_after.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/invariantes.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/pre_post.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/.rspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/before_and_after.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/invariantes.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/pre_post.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/before_after_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/pres_and_posts_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/spec_helper.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/spec/before_after_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/spec/invariantes_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/spec/pres_and_posts_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ruby/spec/spec_helper.rb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,7 +27,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ruby/TP/spec/pres_and_posts_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-610" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,12 +56,15 @@
         <option value="$PROJECT_DIR$/ruby/spec/before_after_spec.rb" />
         <option value="$PROJECT_DIR$/../draftTP/spec/invariantes_spec.rb" />
         <option value="$PROJECT_DIR$/../draftTP/main/pres_and_posts_spec.rb" />
-        <option value="$PROJECT_DIR$/../draftTP/main/pre_post.rb" />
-        <option value="$PROJECT_DIR$/../draftTP/spec/pres_and_posts_spec.rb" />
         <option value="$PROJECT_DIR$/../draftTP/spec/before_after_spec.rb" />
-        <option value="$PROJECT_DIR$/../draftTP/main/before_and_after.rb" />
-        <option value="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/before_and_after.rb" />
         <option value="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" />
+        <option value="$PROJECT_DIR$/../draftTP/main/pre_post.rb" />
+        <option value="$PROJECT_DIR$/../draftTP/main/before_and_after.rb" />
+        <option value="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/pre_post.rb" />
+        <option value="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/invariantes.rb" />
+        <option value="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/before_and_after.rb" />
+        <option value="$PROJECT_DIR$/../draftTP/spec/pres_and_posts_spec.rb" />
+        <option value="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/pres_and_posts_spec.rb" />
       </list>
     </option>
   </component>
@@ -65,14 +91,35 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="grupo9-2019-1c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grupo9-2019-1c" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="grupo9-2019-1c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grupo9-2019-1c" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="grupo9-2019-1c" type="b2602c69:ProjectViewProjectNode" />
+              <item name="grupo9-2019-1c" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="TP" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cursada" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.settings.patched" value="true" />
@@ -101,12 +148,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby">
-    <configuration name="Run spec 'invariantes_spec': ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.Run spec 'pres_and_posts_spec': ruby (1)">
+    <configuration name="Run spec 'before_after_spec': ruby (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="ruby" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -117,7 +164,7 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/spec/before_after_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
@@ -131,11 +178,11 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="invariantes Deberia lanzar un error cuando alguna de las invariantes no se cumple: ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Run spec 'invariantes_spec': ruby (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="ruby" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -146,10 +193,10 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/spec/invariantes_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="invariantes Deberia lanzar un error cuando alguna de las invariantes no se cumple" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -160,11 +207,11 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="invariantes No deberia lanzar un error cuando las invariantes se cumplen: ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Run spec 'pres_and_posts_spec': ruby (1)" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="ruby" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
@@ -175,10 +222,10 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/spec/pres_and_posts_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="invariantes No deberia lanzar un error cuando las invariantes se cumplen" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -189,7 +236,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="Run spec 'pres_and_posts_spec': ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <module name="ruby" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -204,10 +251,10 @@
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/spec/pres_and_posts_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -218,42 +265,27 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="invariantes: ruby" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration name="pre_post" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="ruby" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/main" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="invariantes" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/../../ruby/TP/version_simplificada_sin_herencia/main/pre_post.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby" />
-        <item itemvalue="RSpec.invariantes: ruby" />
-        <item itemvalue="RSpec.invariantes Deberia lanzar un error cuando alguna de las invariantes no se cumple: ruby" />
-        <item itemvalue="RSpec.invariantes No deberia lanzar un error cuando las invariantes se cumplen: ruby" />
-        <item itemvalue="RSpec.Run spec 'invariantes_spec': ruby" />
+        <item itemvalue="RSpec.Run spec 'pres_and_posts_spec': ruby (1)" />
+        <item itemvalue="RSpec.Run spec 'invariantes_spec': ruby (1)" />
+        <item itemvalue="RSpec.Run spec 'before_after_spec': ruby (1)" />
+        <item itemvalue="RSpec.Run spec 'pres_and_posts_spec': ruby" />
+        <item itemvalue="Ruby.pre_post" />
       </list>
     </recent_temporary>
   </component>
@@ -279,53 +311,57 @@
       <workItem from="1557346386030" duration="3087000" />
       <workItem from="1557512062300" duration="9437000" />
       <workItem from="1557576632226" duration="732000" />
+      <workItem from="1558113632765" duration="13429000" />
+      <workItem from="1558146365105" duration="3147000" />
+      <workItem from="1558188242065" duration="16388000" />
+      <workItem from="1558314825831" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Run_spec_'invariantes_spec'__ruby - 2019.05.11 at 09h 18m 13s.xml">
+    <history-entry file="Run_spec_'invariantes_spec'__ruby - 2019.05.19 at 21h 45m 22s.xml">
       <configuration name="Run spec 'invariantes_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes_Si_no_se_cumple_una_invariante,_luego_de_instanciar_la_clase_debería_lanzar_una_excepcion__ruby - 2019.05.11 at 09h 18m 31s.xml">
-      <configuration name="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'invariantes_spec'__ruby - 2019.05.19 at 21h 46m 34s.xml">
+      <configuration name="Run spec 'invariantes_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes_No_deberia_lanzar_un_error_cuando_las_invariantes_se_cumplen__ruby - 2019.05.11 at 09h 18m 51s.xml">
-      <configuration name="invariantes No deberia lanzar un error cuando las invariantes se cumplen: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'invariantes_spec'__ruby - 2019.05.19 at 21h 46m 52s.xml">
+      <configuration name="Run spec 'invariantes_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes_Si_no_se_cumple_una_invariante,_luego_de_instanciar_la_clase_debería_lanzar_una_excepcion__ruby - 2019.05.11 at 09h 19m 57s.xml">
-      <configuration name="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'invariantes_spec'__ruby - 2019.05.19 at 21h 49m 14s.xml">
+      <configuration name="Run spec 'invariantes_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes__ruby - 2019.05.11 at 09h 20m 22s.xml">
-      <configuration name="invariantes: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'pres_and_posts_spec'__ruby - 2019.05.19 at 21h 50m 14s.xml">
+      <configuration name="Run spec 'pres_and_posts_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes__ruby - 2019.05.11 at 09h 20m 41s.xml">
-      <configuration name="invariantes: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'pres_and_posts_spec'__ruby - 2019.05.19 at 21h 55m 56s.xml">
+      <configuration name="Run spec 'pres_and_posts_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes_Deberia_lanzar_un_error_cuando_alguna_de_las_invariantes_no_se_cumple__ruby - 2019.05.11 at 09h 20m 50s.xml">
-      <configuration name="invariantes Deberia lanzar un error cuando alguna de las invariantes no se cumple: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'pres_and_posts_spec'__ruby - 2019.05.19 at 22h 10m 32s.xml">
+      <configuration name="Run spec 'pres_and_posts_spec': ruby" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes_Si_no_se_cumple_una_invariante,_luego_de_instanciar_la_clase_debería_lanzar_una_excepcion__ruby - 2019.05.11 at 09h 20m 56s.xml">
-      <configuration name="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'before_after_spec'__ruby_(1) - 2019.05.19 at 22h 15m 53s.xml">
+      <configuration name="Run spec 'before_after_spec': ruby (1)" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes__ruby - 2019.05.11 at 09h 21m 42s.xml">
-      <configuration name="invariantes: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'invariantes_spec'__ruby_(1) - 2019.05.19 at 22h 16m 01s.xml">
+      <configuration name="Run spec 'invariantes_spec': ruby (1)" configurationId="RSpecRunConfigurationType" />
     </history-entry>
-    <history-entry file="invariantes_Si_no_se_cumple_una_invariante,_luego_de_instanciar_la_clase_debería_lanzar_una_excepcion__ruby - 2019.05.11 at 09h 21m 55s.xml">
-      <configuration name="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby" configurationId="RSpecRunConfigurationType" />
+    <history-entry file="Run_spec_'pres_and_posts_spec'__ruby_(1) - 2019.05.19 at 22h 16m 42s.xml">
+      <configuration name="Run spec 'pres_and_posts_spec': ruby (1)" configurationId="RSpecRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40312000" />
+    <option name="totallyTimeSpent" value="73525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17700455" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22390318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34042552" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46644846" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,29 +381,34 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after_each_call_Con_herencia_Deberian_poder_definirse_mas_de_un_before_and_after_y_funcionar_correctamente__ruby.rcov" NAME="before_and_after_each_call Con herencia Deberian poder definirse mas de un before_and_after y funcionar correctamente: ruby Coverage Results" MODIFIED="1557516647954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes_Deberia_lanzar_un_error_cuando_alguna_de_las_invariantes_no_se_cumple__ruby.rcov" NAME="invariantes Deberia lanzar un error cuando alguna de las invariantes no se cumple: ruby Coverage Results" MODIFIED="1557577248820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes_Deberia_chequear_invariantes_cuando_llama_a_un_metodo__ruby.rcov" NAME="invariantes Deberia chequear invariantes cuando llama a un metodo: ruby Coverage Results" MODIFIED="1556850843636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_No_deberia_lanzar_una_excepcion_cuando_se_cumple_la_postcondicion_del_metodo__initialize___draftTP.rcov" NAME="pres_and_posts No deberia lanzar una excepcion cuando se cumple la postcondicion del metodo 'initialize': draftTP Coverage Results" MODIFIED="1557520135010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__prueba_spec___pruebas.rcov" NAME="Run spec 'prueba_spec': pruebas Coverage Results" MODIFIED="1557348146513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../pruebas" MODULE_NAME="pruebas" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_Deberia_lanzar_una_excepcion_cuando_no_se_cumple_la_postcondicion_del_metodo__initialize___draftTP.rcov" NAME="pres_and_posts Deberia lanzar una excepcion cuando no se cumple la postcondicion del metodo 'initialize': draftTP Coverage Results" MODIFIED="1557519917080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes.rcov" NAME="invariantes Coverage Results" MODIFIED="1557512130930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__before_after_spec___draftTP.rcov" NAME="Run spec 'before_after_spec': draftTP Coverage Results" MODIFIED="1557521511966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after.rcov" NAME="before_and_after Coverage Results" MODIFIED="1557514462896" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after_each_call__draftTP.rcov" NAME="before_and_after_each_call: draftTP Coverage Results" MODIFIED="1557518592128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes_Si_no_se_cumple_una_invariante__luego_de_instanciar_la_clase_debería_lanzar_una_excepcion__ruby.rcov" NAME="invariantes Si no se cumple una invariante, luego de instanciar la clase debería lanzar una excepcion: ruby Coverage Results" MODIFIED="1557577313466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__pres_and_posts_spec___ruby.rcov" NAME="Run spec 'pres_and_posts_spec': ruby Coverage Results" MODIFIED="1557518287882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__invariantes_spec___ruby.rcov" NAME="Run spec 'invariantes_spec': ruby Coverage Results" MODIFIED="1557577067584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes__ruby.rcov" NAME="invariantes: ruby Coverage Results" MODIFIED="1557577299982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__before_after_spec___ruby.rcov" NAME="Run spec 'before_after_spec': ruby Coverage Results" MODIFIED="1557518143497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__pres_and_posts_spec___draftTP.rcov" NAME="Run spec 'pres_and_posts_spec': draftTP Coverage Results" MODIFIED="1557521522186" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__pres_and_posts_spec___draftTP.rcov" NAME="Run spec 'pres_and_posts_spec': draftTP Coverage Results" MODIFIED="1558312725602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__invariantes_spec___draftTP.rcov" NAME="Run spec 'invariantes_spec': draftTP Coverage Results" MODIFIED="1557521517141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_Una_clase_que_hereda_los_metodos_de_otra_con_precondiciones_deberia_checkear_que_estas_se_cumplan__ruby.rcov" NAME="pres_and_posts Una clase que hereda los metodos de otra con precondiciones deberia checkear que estas se cumplan: ruby Coverage Results" MODIFIED="1557515520201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after_each_call__ruby.rcov" NAME="before_and_after_each_call: ruby Coverage Results" MODIFIED="1556913259559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes_No_deberia_lanzar_un_error_cuando_las_invariantes_se_cumplen__ruby.rcov" NAME="invariantes No deberia lanzar un error cuando las invariantes se cumplen: ruby Coverage Results" MODIFIED="1557577129354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__pres_and_posts_spec___ruby__1_.rcov" NAME="Run spec 'pres_and_posts_spec': ruby (1) Coverage Results" MODIFIED="1558314998315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP" MODULE_NAME="ruby" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after_each_call_Con_herencia_Deberian_poder_definirse_mas_de_un_before_and_after_y_funcionar_correctamente_en_una_clase_que_hereda_de_otra_que_use_before_and_after__ruby.rcov" NAME="before_and_after_each_call Con herencia Deberian poder definirse mas de un before_and_after y funcionar correctamente en una clase que hereda de otra que use before_and_after: ruby Coverage Results" MODIFIED="1557518101538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
-    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_Para_el_metodo__initialize___draftTP.rcov" NAME="pres_and_posts Para el metodo 'initialize': draftTP Coverage Results" MODIFIED="1557520772392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__before_after_spec___ruby__1_.rcov" NAME="Run spec 'before_after_spec': ruby (1) Coverage Results" MODIFIED="1558314948306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP" MODULE_NAME="ruby" />
     <SUITE FILE_PATH="coverage/grupo9_2019_1c@All_tests_in_spec__pruebas.rcov" NAME="All tests in spec: pruebas Coverage Results" MODIFIED="1556765527050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../pruebas" MODULE_NAME="pruebas" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after_each_call_Con_herencia_Deberian_poder_definirse_mas_de_un_before_and_after_y_funcionar_correctamente__ruby.rcov" NAME="before_and_after_each_call Con herencia Deberian poder definirse mas de un before_and_after y funcionar correctamente: ruby Coverage Results" MODIFIED="1557516647954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_No_deberia_lanzar_una_excepcion_cuando_se_cumple_la_postcondicion_del_metodo__initialize___draftTP.rcov" NAME="pres_and_posts No deberia lanzar una excepcion cuando se cumple la postcondicion del metodo 'initialize': draftTP Coverage Results" MODIFIED="1557520135010" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_Deberia_lanzar_una_excepcion_cuando_no_se_cumple_la_postcondicion_del_metodo__initialize___draftTP.rcov" NAME="pres_and_posts Deberia lanzar una excepcion cuando no se cumple la postcondicion del metodo 'initialize': draftTP Coverage Results" MODIFIED="1557519917080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts__draftTP.rcov" NAME="pres_and_posts: draftTP Coverage Results" MODIFIED="1558114356610" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__before_after_spec___draftTP.rcov" NAME="Run spec 'before_after_spec': draftTP Coverage Results" MODIFIED="1558312352320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@before_and_after_each_call__draftTP.rcov" NAME="before_and_after_each_call: draftTP Coverage Results" MODIFIED="1557518592128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__invariantes_spec___ruby.rcov" NAME="Run spec 'invariantes_spec': ruby Coverage Results" MODIFIED="1558313350129" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__pres_and_posts_spec___ruby.rcov" NAME="Run spec 'pres_and_posts_spec': ruby Coverage Results" MODIFIED="1558314628573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__before_after_spec___ruby.rcov" NAME="Run spec 'before_after_spec': ruby Coverage Results" MODIFIED="1558312972692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@invariantes_No_deberia_lanzar_un_error_cuando_las_invariantes_se_cumplen__ruby.rcov" NAME="invariantes No deberia lanzar un error cuando las invariantes se cumplen: ruby Coverage Results" MODIFIED="1557577129354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@Run_spec__invariantes_spec___ruby__1_.rcov" NAME="Run spec 'invariantes_spec': ruby (1) Coverage Results" MODIFIED="1558314957065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pre_post.rcov" NAME="pre_post Coverage Results" MODIFIED="1558313399660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main" MODULE_NAME="ruby" />
+    <SUITE FILE_PATH="coverage/grupo9_2019_1c@pres_and_posts_Para_el_metodo__initialize___draftTP.rcov" NAME="pres_and_posts Para el metodo 'initialize': draftTP Coverage Results" MODIFIED="1557520772392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../draftTP" MODULE_NAME="draftTP" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../pruebas/spec/spec_helper.rb">
@@ -446,39 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../draftTP/main/before_and_after.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="30" column="31" lean-forward="true" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../draftTP/spec/before_after_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-703">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../draftTP/main/pre_post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../draftTP/spec/pres_and_posts_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../draftTP/main/invariantes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ruby/TP/before_and_after.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -486,28 +494,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../draftTP/main/invariantes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../draftTP/spec/before_after_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="34" column="4" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/pre_post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66" />
+        <state relative-caret-position="-8">
+          <caret line="38" column="7" lean-forward="true" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../draftTP/main/pre_post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="47" column="5" lean-forward="true" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/invariantes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
+        <state relative-caret-position="119">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/invariantes_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="100">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../draftTP/main/before_and_after.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="74" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/main/before_and_after.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        <state relative-caret-position="-2">
+          <caret line="35" column="38" lean-forward="true" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../draftTP/spec/pres_and_posts_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="40" column="2" selection-start-line="40" selection-start-column="2" selection-end-line="50" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruby/TP/version_simplificada_sin_herencia/spec/pres_and_posts_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="76" column="7" selection-start-line="76" selection-start-column="7" selection-end-line="76" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruby/TP/spec/invariantes_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ruby/TP/spec/pres_and_posts_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-610" />
       </provider>
     </entry>
   </component>
