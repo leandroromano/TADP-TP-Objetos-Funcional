@@ -34,7 +34,7 @@ class ParserException(reason: String) extends Exception(reason)
 class EOIParserException extends ParserException("reached end of input")
 class NotANoteException(val read: Char) extends ParserException(s"Expected [A|B|C|D|E|F|G] but got $read")
 
-trait Exprecion {
+trait Expression {
   def toPartitura: List[Nota]
 }
 case class Multiplicacion(multiplicador: Integer, contenido: Exprecion){
@@ -44,6 +44,6 @@ case class Multiplicacion(multiplicador: Integer, contenido: Exprecion){
     return aux
   }
 }
-case class Simple(contenido: List[Nota]){
+case class SimpleExpression(contenido: List[Nota]){
   def toPartitura: List[Nota] = contenido
 }
