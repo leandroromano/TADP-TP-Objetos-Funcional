@@ -39,7 +39,7 @@ class MusicParser(input: String) {
             }
 
           } catch {
-            case _: EOIParserException => //<-- Revisar
+            case _: EOIParserException => throw new SyntaxErrorException()
           }
 
           return Multiplication(n.asDigit, expression)
@@ -72,9 +72,9 @@ trait Expression {
 
 case class Multiplication(multiplicador: Integer, contenido: Expression) extends Expression {
   def toPartitura: List[Nota] = {
-    var aux: List[Nota] = List()
-    (1 to multiplicador).foreach(_ => aux = aux ::: contenido.toPartitura)
-    return aux
+    var partitura: List[Nota] = List()
+    (1 to multiplicador).foreach(_ => partitura = partitura ::: contenido.toPartitura)
+    return partitura
   }
 }
 
