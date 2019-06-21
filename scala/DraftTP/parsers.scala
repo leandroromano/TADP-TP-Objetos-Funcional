@@ -1,5 +1,3 @@
-import Parsers.{digit, letter}
-
 import scala.util.Try
 import scala.List
 
@@ -28,8 +26,6 @@ case class anyChar() extends Parser{
         }
     }
 }
-
-
 
 case class char(caracter: Char) extends Parser{
      def apply(entrada: String): ParserOutput = {
