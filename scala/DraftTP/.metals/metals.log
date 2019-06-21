@@ -1057,3 +1057,264 @@ WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 4:24:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5760
+jun 21, 2019 4:24:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5759
+Exception in thread "pool-9-thread-2" scala.meta.internal.metals.ControlCancellationException
+Caused by: java.util.concurrent.CancellationException
+	at scala.meta.internal.metals.ControlCancellationException$.$lessinit$greater$default$1(ControlCancellationException.scala:10)
+	at scala.meta.internal.metals.FutureCancelToken.checkCanceled(FutureCancelToken.scala:20)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:189)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 4:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5839
+jun 21, 2019 4:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5840
+jun 21, 2019 4:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5841
+jun 21, 2019 4:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5844
+jun 21, 2019 4:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5847
+jun 21, 2019 4:54:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5848
+jun 21, 2019 4:54:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5886
+jun 21, 2019 4:54:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5888
+jun 21, 2019 4:54:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5890
+jun 21, 2019 4:54:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5896
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 4:55:03 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 4:55:06 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5978
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5981
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5982
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5976
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5984
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5985
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5991
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 5993
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6001
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6003
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6004
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6005
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6013
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6015
+jun 21, 2019 4:56:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6017
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 5:10:51 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 5:10:51 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 5:12:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6796
+jun 21, 2019 5:12:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 6798
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 5:17:11 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 5:17:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+jun 21, 2019 5:17:14 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 5:17:14 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 5:19:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7112
+jun 21, 2019 5:19:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7114
+jun 21, 2019 5:19:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7117
+jun 21, 2019 5:19:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7120
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4684)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4676)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4684)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4676)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4684)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4677)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4678)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4679)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4680)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[Parser]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4682)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4683)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4684)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4685)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[ParserOutput]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4688)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[ParserOutput]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4688)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[ParserOutput]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4688)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in String => ParserOutputRangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4771, 4780, 4795)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 5:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7403
+jun 21, 2019 5:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7408
+jun 21, 2019 5:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7401
+jun 21, 2019 5:45:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7409
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[ParserOutput]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4670, 4670, 4688)
+jun 21, 2019 5:52:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 7500
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:01:49 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 6:01:51 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+jun 21, 2019 6:08:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8088
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8193
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8201
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8203
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8207
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8210
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8212
+jun 21, 2019 6:10:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8214
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+jun 21, 2019 6:10:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8215
+jun 21, 2019 6:10:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8216
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:13:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8306
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
