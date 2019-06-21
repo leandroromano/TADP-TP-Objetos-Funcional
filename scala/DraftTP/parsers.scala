@@ -1,3 +1,5 @@
+import Parsers.{digit, letter}
+
 import scala.util.Try
 import scala.List
 
@@ -15,52 +17,72 @@ case class ParserFailure(message: String) extends ParserOutput {
     def isParserSuccess: Boolean = false
 }
 
-object Parsers {
-    type Parser = String => ParserOutput
+sealed trait Parser extends ((String)=> ParserOutput) {
+}
 
-    def anyChar(entrada: String): ParserOutput =
+case class anyChar() extends Parser{
+    def apply(entrada: String): ParserOutput = {
         entrada.toList match {
             case List() => ParserFailure("texto vacio")
             case c :: s => ParserSuccess[Char](Some(c), s.mkString)
         }
+    }
+}
 
-    def char(caracter: Char)(entrada: String): ParserOutput = 
+
+
+case class char(caracter: Char) extends Parser{
+     def apply(entrada: String): ParserOutput = {
         entrada.toList match {
-            case List()                    => ParserFailure("caracter no encontrado")
+            case List() => ParserFailure("caracter no encontrado")
             case c :: s if (c == caracter) => ParserSuccess[Char](Some(c), s.mkString)
-            case c :: s                    => ParserFailure("caracter incorrecto")
+            case c :: s => ParserFailure("caracter incorrecto")
         }
+    }
+}
 
-    def void(entrada: String): ParserOutput = 
+case class void() extends Parser{
+     def apply(entrada: String): ParserOutput = {
         entrada match {
             case "" => ParserFailure("texto vacio")
             case _  => ParserSuccess[Char](None, entrada.tail)
         }
+    }
+}
 
-    def letter(entrada: String): ParserOutput =
+case class letter() extends Parser{
+     def apply(entrada: String): ParserOutput = {
         entrada.toList match {
             case List()                 => ParserFailure("texto vacio")
             case c :: s if (c.isLetter) => ParserSuccess[Char](Some(c), s.mkString)
             case _                      => ParserFailure("no es una letra")
         }
+    }
+}
 
-    def digit(entrada: String): ParserOutput =
+case class digit() extends Parser{
+    def apply(entrada: String): ParserOutput = {
         entrada.toList match {
             case List()                => ParserFailure("texto vacio")
             case c :: s if (c.isDigit) => ParserSuccess[Char](Some(c), s.mkString)
             case _                     => ParserFailure("no es un digito")
         }
+    }
+}
 
-    def alphaNum(entrada: String): ParserOutput = {
-        var aux: (ParserOutput, ParserOutput) = (letter(entrada), digit(entrada))
+case class alphaNum() extends Parser{
+    def apply(entrada: String): ParserOutput = { 
+        var aux: (ParserOutput, ParserOutput) = (letter().apply(entrada), digit().apply(entrada))
         aux match {
             case (ParserFailure(_), ParserFailure(_))    => ParserFailure("no es un caracter alfanumerico")
             case (ParserSuccess(_, _), ParserFailure(_)) => aux._1
             case (ParserFailure(_), ParserSuccess(_, _)) => aux._2
         }
     }
+}
 
-    def string(cadena: String)(entrada: String): ParserOutput = {
+case class string(cadena: String) extends Parser{
+    def apply(entrada: String): ParserOutput = {
         val tamañoDeCadena: Integer = cadena.length
         val cadenaAParsear: String = entrada.take(tamañoDeCadena)
         if (cadena == "")
@@ -70,7 +92,5 @@ object Parsers {
         else
             ParserFailure("cadena incorrecta")
     }
-    
 }
-
 
