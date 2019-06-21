@@ -1,11 +1,11 @@
-import Parsers.{digit, letter}
-
 import scala.util.Try
 import scala.List
 
 class ParseErrorException(message: String) extends RuntimeException
 
-trait ParserOutput
+trait ParserOutput{
+    def isParserSuccess: Boolean
+}
  case class ParserSuccess[T](resultado: Option[T], sobra: String) extends ParserOutput {
     def getResultado: Option[T] = resultado
     def getSobra: String = sobra
@@ -21,12 +21,26 @@ case class ParserFailure(message: String) extends ParserOutput {
 
 sealed trait Parser extends ((String)=> ParserOutput) {
 
-    def <|>(parser: Parser): Parser{
+    def <|>(parser: Parser): Parser = {
         //Y aca que hacemos? je
+        return  new defaultParser(((entrada: String)=>{
+            val aux: (ParserOutput, ParserOutput) = (this.apply(entrada), parser.apply(entrada))
+            aux match{
+                case (output1, _) if output1.isParserSuccess => output1
+                case (_, output2) if output2.isParserSuccess => output2
+                case _ => ParserFailure("Ningun parser evaluaba")  
+            }
+        }))
     }
 }
 
-implicit class anyChar() extends Parser{
+ class defaultParser(comportamiento: (String)=> ParserOutput) extends Parser{
+    def apply(entrada: String): ParserOutput = {
+        this.comportamiento(entrada)
+    }
+}
+
+ class anyChar() extends Parser{
     def apply(entrada: String): ParserOutput = {
         entrada.toList match {
             case List() => ParserFailure("texto vacio")
