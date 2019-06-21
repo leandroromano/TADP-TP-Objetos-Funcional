@@ -345,3 +345,86 @@ WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 20, 2019 10:33:19 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 158, 158, 174)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 158, 158, 166)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 158, 158, 174)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 158, 158, 166)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 158, 158, 199)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 158, 158, 199)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in String => ParserOutputRangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 707, 715, 730)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in String => ParserOutputRangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 707, 715, 730)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
