@@ -6,7 +6,7 @@ import scala.List
 class ParseErrorException(message: String) extends RuntimeException
 
 trait ParserOutput
-case class ParserSuccess[T](resultado: Option[T], sobra: String) extends ParserOutput {
+ case class ParserSuccess[T](resultado: Option[T], sobra: String) extends ParserOutput {
     def getResultado: Option[T] = resultado
     def getSobra: String = sobra
     def isParserSuccess: Boolean = true
@@ -17,10 +17,16 @@ case class ParserFailure(message: String) extends ParserOutput {
     def isParserSuccess: Boolean = false
 }
 
+
+
 sealed trait Parser extends ((String)=> ParserOutput) {
+
+    def <|>(parser: Parser): Parser{
+        //Y aca que hacemos? je
+    }
 }
 
-case class anyChar() extends Parser{
+implicit class anyChar() extends Parser{
     def apply(entrada: String): ParserOutput = {
         entrada.toList match {
             case List() => ParserFailure("texto vacio")
@@ -28,7 +34,6 @@ case class anyChar() extends Parser{
         }
     }
 }
-
 
 
 case class char(caracter: Char) extends Parser{
