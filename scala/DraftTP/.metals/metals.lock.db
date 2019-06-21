@@ -1,0 +1,6 @@
+#FileLock
+#Thu Jun 20 19:13:48 ART 2019
+hostName=192.168.0.13
+id=16b76f3f6ec4d43ae950b8fbfea4f60ea83db0813db
+method=file
+server=192.168.0.13\:50597
