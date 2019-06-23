@@ -1318,3 +1318,705 @@ WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\
 jun 21, 2019 6:13:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
 ADVERTENCIA: Unmatched cancel notification for request id 8306
 WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:24:24 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 6:24:25 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:31:48 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 6:31:48 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+jun 21, 2019 6:31:51 PM scala.meta.internal.pc.CompilerAccess retryWithCleanCompiler
+INFORMACIÓN: compiler crashed due to an error in the Scala compiler, retrying with new compiler instance.
+jun 21, 2019 6:31:51 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.reflect.internal.Definitions$DefinitionsClass.isByNameParamType(Definitions.scala:416)
+	at scala.reflect.internal.TreeInfo.isStableIdent(TreeInfo.scala:137)
+	at scala.reflect.internal.TreeInfo.isStableIdentifier(TreeInfo.scala:113)
+	at scala.reflect.internal.TreeInfo.isPath(TreeInfo.scala:102)
+	at scala.reflect.internal.TreeInfo.admitsTypeSelection(TreeInfo.scala:155)
+	at scala.tools.nsc.interactive.Global.stabilizedType(Global.scala:959)
+	at scala.tools.nsc.interactive.Global.typedTreeAt(Global.scala:807)
+	at scala.meta.internal.pc.SignatureHelpProvider.signatureHelp(SignatureHelpProvider.scala:22)
+
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5896, 5898, 5899)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5896, 5898, 5899)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5903, 5905, 5906)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5903, 5905, 5906)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:35:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 8659
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+jun 21, 2019 6:36:39 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CaseKeyword.<init>(Completions.scala:1232)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:451)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:37:04 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1390)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:417)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:37:04 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1390)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:417)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:37:04 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1390)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:417)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:37:04 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1390)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:417)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:37:05 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1390)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:417)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:37:05 PM scala.meta.internal.pc.Completions completionPosition
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1568)
+	at scala.meta.internal.pc.Completions$Parents.<init>(Completions.scala:1560)
+	at scala.meta.internal.pc.Completions$CompletionPosition$CasePattern.<init>(Completions.scala:1390)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe(Completions.scala:417)
+	at scala.meta.internal.pc.Completions.completionPositionUnsafe$(Completions.scala:387)
+	at scala.meta.internal.pc.MetalsGlobal.completionPositionUnsafe(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.Completions.completionPosition(Completions.scala:379)
+	at scala.meta.internal.pc.Completions.completionPosition$(Completions.scala:364)
+	at scala.meta.internal.pc.MetalsGlobal.completionPosition(MetalsGlobal.scala:23)
+	at scala.meta.internal.pc.CompletionProvider.safeCompletionsAt(CompletionProvider.scala:397)
+	at scala.meta.internal.pc.CompletionProvider.completions(CompletionProvider.scala:47)
+	at scala.meta.internal.pc.ScalaPresentationCompiler.$anonfun$complete$1(ScalaPresentationCompiler.scala:86)
+	at scala.meta.internal.pc.CompilerAccess.withSharedCompiler(CompilerAccess.scala:119)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$withInterruptableCompiler$1(CompilerAccess.scala:76)
+	at scala.meta.internal.pc.CompilerAccess.$anonfun$onCompilerJobQueue$1(CompilerAccess.scala:191)
+	at scala.meta.internal.pc.CompilerJobQueue$Job.run(CompilerJobQueue.scala:73)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9112
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9113
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9114
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9116
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9121
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9119
+jun 21, 2019 6:40:09 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9120
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9130
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9131
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9135
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9142
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9146
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9148
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9150
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9152
+jun 21, 2019 6:40:11 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9153
+jun 21, 2019 6:40:12 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 9160
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.45s
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+INFO  shutting down Metals
+INFO  time: initialize in 2.01s
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 22, 2019 8:28:23 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 44
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 286, 286, 295)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 320, 320, 459)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 529, 529, 713)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 529, 529, 544)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 529, 529, 544)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 762, 762, 9079)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 836, 836, 5841)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 836, 836, 5841)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 848, 848, 864)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 848, 848, 1307)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 836, 836, 845)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 836, 836, 845)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 848, 848, 1307)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 231, 231, 240)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ThreadLocal[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 333, 333, 472)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ThreadLocal[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 333, 333, 472)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 361, 361, 370)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 361, 361, 370)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 361, 361, 370)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 231, 231, 240)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 231, 231, 240)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 361, 361, 370)
+jun 22, 2019 8:51:37 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+INFO  time: initialize in 1.7s
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+INFO  no build target: using presentation compiler with only scala-library
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 967, 967, 1313)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 984, 984, 1316)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 22, 2019 10:35:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 45
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1328, 1328, 5844)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1340, 1340, 2041)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1328, 1328, 1337)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1347, 1349, 2043)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1347, 1349, 2043)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1348, 1348, 5863)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1365, 1365, 5880)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1469, 1469, 1499)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1469, 1469, 1484)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1469, 1469, 1484)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1572, 1574, 2062)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in () => <error>RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1572, 1574, 2062)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1573, 1573, 2076)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1590, 1590, 2095)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in (<error>, <error>)RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1678, 1678, 1706)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in (<error>, <error>)RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1678, 1678, 1706)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1696, 1696, 1711)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2209, 2209, 5994)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2221, 2221, 2547)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2319, 2319, 2349)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2319, 2319, 2334)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserFailure[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2412, 2425, 2449)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserFailure[_CURSOR_]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2412, 2425, 2435)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2596, 2596, 6025)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2608, 2608, 3185)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2704, 2704, 2734)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2704, 2704, 2719)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2880, 2880, 2919)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2880, 2880, 2895)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserFailure[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2981, 2994, 3045)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2880, 2880, 2895)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 3233, 3233, 6052)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 3245, 3245, 3996)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 3245, 3245, 3996)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 3348, 3348, 3378)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 3517, 3517, 3534)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4157, 4157, 4499)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4523, 4523, 4841)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4621, 4621, 4651)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 4868, 4868, 5525)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 22, 2019 10:54:36 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5561, 5561, 6143)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5568, 5568, 5582)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5568, 5568, 5575)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5671, 5671, 5695)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5722, 5722, 5752)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 22, 2019 11:01:09 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+jun 22, 2019 11:01:11 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 22, 2019 11:05:36 PM scala.meta.internal.pc.CompilerAccess handleError
+GRAVE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.seenFromType(HoverProvider.scala:106)
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:42)
+
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6742, 6742, 9466)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6767, 6767, 9468)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6767, 6767, 6874)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6767, 6767, 6874)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6811, 6811, 6874)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6947, 6947, 7141)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6906, 6906, 7150)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Char]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6953, 6953, 6971)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Char]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6953, 6953, 6971)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Char]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6953, 6953, 6971)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Char]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6953, 6953, 6971)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Char]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6953, 6953, 6971)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Char]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 6953, 6953, 6971)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7193, 7193, 7559)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7241, 7241, 7562)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7612, 7612, 7836)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[Unit]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7612, 7612, 7624)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[Unit]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7612, 7612, 7624)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[Unit]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7612, 7612, 7624)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7661, 7661, 7839)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Unit]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7661, 7661, 7679)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[Unit]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7661, 7661, 7679)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[Unit]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7612, 7612, 7624)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7913, 7913, 8255)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 7961, 7961, 8258)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 8303, 8303, 8641)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 8350, 8350, 8372)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 8692, 8692, 9134)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 8739, 8739, 9137)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 8782, 8782, 9136)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 8802, 8802, 8824)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 9203, 9203, 9647)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 9252, 9252, 9652)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[String]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 9203, 9203, 9217)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 231, 231, 240)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 353, 353, 362)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 353, 353, 362)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 278, 278, 287)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 278, 278, 287)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Option[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 278, 278, 287)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 493, 493, 508)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 726, 726, 741)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 726, 726, 741)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 928, 928, 943)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2228, 2228, 2237)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2216, 2216, 2225)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1327, 1327, 1342)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2216, 2216, 2225)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2327, 2327, 2342)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2713, 2713, 2728)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2713, 2713, 2728)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 726, 726, 741)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 726, 726, 741)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 726, 726, 741)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 726, 726, 741)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 979, 979, 994)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[ParserOutput[T]]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5158, 5158, 5179)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5214, 5214, 5229)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5058, 5058, 5072)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in List[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5058, 5058, 5065)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 5882, 5882, 5897)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2380, 2380, 2395)
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 851, 851, 860)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 851, 851, 860)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 962, 962, 977)
+jun 23, 2019 1:35:21 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 2761
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build tool detected in workspace 'c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[(T, A)]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1373, 1373, 1387)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[A]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1681, 1681, 1696)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[A]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1681, 1681, 1696)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[T]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1664, 1664, 1679)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in Parser[A]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 2143, 2143, 2152)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[<error>]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1665, 1665, 2085)
+something's wrong: no file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala in ParserOutput[A]RangePosition(file:///c%3A/Users/juanb/Desktop/MisProyectos/Scala/grupo9-2019-1c/scala/DraftTP/parsers.scala, 1682, 1682, 1696)
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+jun 23, 2019 1:56:52 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+ADVERTENCIA: Unmatched cancel notification for request id 3195
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala
+WARN  no build target: c:\Users\juanb\Desktop\MisProyectos\Scala\grupo9-2019-1c\scala\DraftTP\parsers.scala

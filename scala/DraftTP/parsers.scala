@@ -3,254 +3,258 @@ import scala.List
 
 class ParseErrorException(message: String) extends RuntimeException(message)
 
-trait ParserOutput {
+trait ParserOutput[T] {
     def isParserSuccess: Boolean
     def getSobra: String
-    // def getResultado: Option[T] ??? -> Preguntar
+    def getResultado: T
 }
 
-case class ParserSuccess[T](resultado: Option[T], sobra: String) extends ParserOutput {
-    def getResultado: Option[T] = resultado
+case class ParserSuccess[T](resultado: T, sobra: String) extends ParserOutput[T] {
+    def getResultado: T = resultado
     def getSobra: String = sobra
     def isParserSuccess: Boolean = true
 }
 
-case class ParserFailure(message: String) extends ParserOutput {
+case class ParserFailure[T](message: String) extends ParserOutput[T] {
     def getResultado = throw new ParseErrorException(message)
     def getSobra =  throw new ParseErrorException(message)
     def isParserSuccess: Boolean = false
 }
 
-sealed trait Parser extends ((String) => ParserOutput) {
+sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
+
+    def apply(entrada: String): ParserOutput[T]
+
     // ---- Combinators ----
 
-    def <|>(parser: Parser): Parser = {
-        return  new GenericParser(((entrada: String) => {
-            val aux: (ParserOutput, ParserOutput) = (this(entrada), parser(entrada))
+    def <|>(parser: Parser[T]): Parser[T] = {
+        return  new GenericParser[T](((entrada: String) => {
+            val aux: (ParserOutput[T], ParserOutput[T]) = (this(entrada), parser(entrada))
             aux match{
                 case (output1, _) if output1.isParserSuccess => output1
                 case (_, output2) if output2.isParserSuccess => output2
-                case _                                       => ParserFailure("todos fallan")  
+                case _                                       => ParserFailure[T]("todos fallan")  
             }
         }))
     }
 
-    def <>(parser: Parser): Parser = {
-        return new GenericParser(((entrada: String) => {
-            val first: ParserOutput = this(entrada)
+    def <>[A](parser: Parser[A]): Parser[(T, A)] = {
+        return new GenericParser[(T, A)](((entrada: String) => {
+            val first: ParserOutput[T] = this(entrada)
             if(!first.isParserSuccess)
-                ParserFailure("el primero fallo")
+                ParserFailure[(T, A)]("el primero fallo")
             else {
-                val retorno: (ParserOutput, ParserOutput) = (first, parser(first.getSobra))
+                val retornos: (ParserOutput[T], ParserOutput[A]) = (first, parser(first.getSobra))
                 
-                retorno match {
+                retornos match {
                     case (fst, snd) if (snd.isParserSuccess) =>
-                        ParserSuccess[(ParserOutput, ParserOutput)]( Option((fst, snd)), snd.getSobra )
-                    case _                                   => ParserFailure("el segundo fallo")
+                        ParserSuccess[(T, A)]((fst.getResultado, snd.getResultado), snd.getSobra)
+                    case _                                   => 
+                        ParserFailure[(T, A)]("el segundo fallo")
                 }
             }
         }))
     }
 
-    def ~>(parser: Parser): Parser = {
-        return new GenericParser(((entrada: String) => {
-            var retorno: ParserOutput = this(entrada)
+    def ~>[A](parser: Parser[A]): Parser[A] = {
+        return new GenericParser[A](((entrada: String) => {
+            var first: ParserOutput[T] = this(entrada)
         
-            retorno match {
-                case r if !r.isParserSuccess => retorno
-                case r                       => parser(r.getSobra)
+            first match {
+                case ParserFailure(message) => ParserFailure[A](message)
+                case r                      => parser(r.getSobra)
             }
 
         }))
     }
 
-    def <~(parser: Parser): Parser = {
-        return new GenericParser(((entrada: String) => {
-            var first: ParserOutput = this(entrada)
+    def <~[A](parser: Parser[A]): Parser[T] = {
+        return new GenericParser[T](((entrada: String) => {
+            var first: ParserOutput[T] = this(entrada)
             if (!first.isParserSuccess)
-                ParserFailure("el primero fallo")
+                ParserFailure[T]("el primero fallo")
             else {
-                val second: ParserOutput = parser(first.getSobra)
+                val second: ParserOutput[A] = parser(first.getSobra)
 
                 second match {
-                    case snd if (!snd.isParserSuccess) => ParserFailure("el segundo fallo")
-                    case _                             => first // <-- qué "sobra" devuelve?
+                    case ParserFailure(message)  => ParserFailure[T]("el segundo fallo: " + message)
+                    case ParserSuccess(_, sobra) => ParserSuccess(first.getResultado, sobra) // Devuelve la sobra del segundo?
                 }
             }
         }))
     }
 
-    def sepBy(parser: Parser): Parser = {
-        return new GenericParser(((entrada: String) => {
-            var retorno: ParserOutput = this(entrada)
+    // def sepBy(parser: Parser[A]): Parser[String] = {        // Que tipos de parser???
+    //     return new GenericParser(((entrada: String) => {
+    //         var retorno: ParserOutput[T] = this(entrada)
 
-            if (retorno.isParserSuccess) {
-                var sobra: String = retorno.getSobra
-                var parserVariable: Parser = parser
+    //         if (retorno.isParserSuccess) {
+    //             var sobra: String = retorno.getSobra
+    //             var parserVariable: Parser[] = parser // Corregir
 
-                while (retorno.isParserSuccess && sobra != "" ) {
-                    retorno = parserVariable(sobra)
+    //             while (retorno.isParserSuccess && sobra != "" ) {
+    //                 retorno = parserVariable(sobra)
 
-                    if(retorno.isParserSuccess)
-                        sobra = retorno.getSobra
+    //                 if(retorno.isParserSuccess)
+    //                     sobra = retorno.getSobra
 
-                    if (parserVariable == this)
-                        parserVariable = parser
-                    else
-                        parserVariable = this
-                }
-            }
+    //                 if (parserVariable == this)
+    //                     parserVariable = parser
+    //                 else
+    //                     parserVariable = this
+    //             }
+    //         }
 
-            retorno
-        }))
-    }
+    //         retorno
+    //     }))
+    // }
 
     // ---- Operaciones ----
 
     type Condicion = String => Boolean
-    def satisfies(condicion: Condicion): Parser = {
-        return new GenericParser(((entrada: String) => {
-            var retorno: ParserOutput = this(entrada)
+    def satisfies(condicion: Condicion): Parser[T] = {
+        return new GenericParser[T](((entrada: String) => {
+            var retorno: ParserOutput[T] = this(entrada)
             retorno match {
-                case _ if !condicion(entrada) => ParserFailure("no se cumple condicion de entrada")
+                case _ if !condicion(entrada) => ParserFailure[T]("no se cumple condicion de entrada")
                 case r                        => r
             }
         }))
     }
 
-    def opt: Parser = {
-        return new GenericParser(((entrada: String) => {
-            var retorno: ParserOutput = this(entrada)
+    def opt: Parser[T] = {
+        return new GenericParser[T](((entrada: String) => {
+            var retorno: ParserOutput[T] = this(entrada)
 
             retorno match {
                 case r if r.isParserSuccess => r
-                case _                      => ParserSuccess(None, entrada)
+                case _                      => ParserSuccess[T](().asInstanceOf[T], entrada) // <--- Que devuelve? Esto se ve feo
             }
         }))
     }
 
-    def *(): Parser = {
-        return new GenericParser(((entrada: String) => {
-            var retorno: List[ParserOutput] = List()
-            var output: ParserOutput = this(entrada)
+    def *(): Parser[List[T]] = {
+        return new GenericParser[List[T]](((entrada: String) => {
+            var retorno: List[ParserOutput[T]] = List()
+            var output: ParserOutput[T] = this(entrada)
 
             if (!output.isParserSuccess)
-                ParserSuccess[List[ParserOutput]](Option[List[ParserOutput]](List()), entrada)
+                ParserSuccess[List[T]](List(), entrada)
             else {
                 while(output.isParserSuccess){
-                    retorno = retorno ::: List[ParserOutput](output)
+                    retorno = retorno ::: List[ParserOutput[T]](output)
                     output = this(output.getSobra)
                 }
-                ParserSuccess(Option[List[ParserOutput]](retorno), retorno.last.getSobra)
+                ParserSuccess[List[T]](retorno.map(_.getResultado), retorno.last.getSobra)
             }    
         }))
     }
 
-    def +(): Parser =  {
-        return new GenericParser(((entrada: String) => {
-            var retorno: List[ParserOutput] = List()
-            var output: ParserOutput = this(entrada)
+    def +(): Parser[List[T]] =  {
+        return new GenericParser[List[T]](((entrada: String) => {
+            var retorno: List[ParserOutput[T]] = List()
+            var output: ParserOutput[T] = this(entrada)
 
             if (!output.isParserSuccess)
-                output
+                ParserFailure[List[T]]("ERROR") // Modificar
             else {
                 while(output.isParserSuccess){
-                    retorno = retorno ::: List[ParserOutput](output)
+                    retorno = retorno ::: List[ParserOutput[T]](output)
                     output = this(output.getSobra)
                 }
-                ParserSuccess(Option[List[ParserOutput]](retorno), retorno.last.getSobra)
+                ParserSuccess[List[T]](retorno.map(_.getResultado), retorno.last.getSobra)
             }
         }))
     }
 
     // def const(): Parser = ???
     
-    // def map(transformacion: T => A)(parser: Parser): Parser = {
-    //     return new GenericParser(((entrada: String) => {
-    //         val old: ParserOutput = this(entrada)
+    def map[A](transformacion: T => A): Parser[A] = {
+        return new GenericParser[A](((entrada: String) => {
+            val old: ParserOutput[T] = this(entrada)
 
-    //         old match {
-    //             case ParserSuccess[T](Option[T](retorno), sobra) => ParserSuccess[A](Option[A](transformacion(retorno)), sobra)
-    //             case _ => old
-    //         }
-    //     }))
-    // }
+            old match {
+                case ParserSuccess(retorno, sobra) => ParserSuccess[A](transformacion(retorno), sobra)
+                case ParserFailure(message) => ParserFailure[A](message)
+            }
+        }))
+    }
 }
 
-class GenericParser(comportamiento: (String) => ParserOutput) extends Parser{
-    def apply(entrada: String): ParserOutput = {
+class GenericParser[T](comportamiento: (String) => ParserOutput[T]) extends Parser[T]{
+    def apply(entrada: String): ParserOutput[T] = {
         this.comportamiento(entrada)
     }
 }
 
-class anyChar() extends Parser{
-    def apply(entrada: String): ParserOutput = {
+class anyChar() extends Parser[Char]{
+    def apply(entrada: String): ParserOutput[Char] = {
         entrada.toList match {
-            case List() => ParserFailure("texto vacio")
-            case c :: s => ParserSuccess[Char](Some(c), s.mkString)
+            case List() => ParserFailure[Char]("texto vacio")
+            case c :: s => ParserSuccess[Char](c, s.mkString)
         }
     }
 }
 
-class char(caracter: Char) extends Parser{
-     def apply(entrada: String): ParserOutput = {
+class char(caracter: Char) extends Parser[Char]{
+     def apply(entrada: String): ParserOutput[Char] = {
         entrada.toList match {
-            case List()                  => ParserFailure("caracter no encontrado")
-            case c :: s if c == caracter => ParserSuccess[Char](Some(c), s.mkString)
-            case c :: s                  => ParserFailure("caracter incorrecto")
+            case List()                  => ParserFailure[Char]("caracter no encontrado")
+            case c :: s if c == caracter => ParserSuccess[Char](c, s.mkString)
+            case c :: s                  => ParserFailure[Char]("caracter incorrecto")
         }
     }
 }
 
-class void() extends Parser{
-     def apply(entrada: String): ParserOutput = {
+class void() extends Parser[Unit] {
+     def apply(entrada: String): ParserOutput[Unit] = {
         entrada match {
-            case "" => ParserFailure("texto vacio")
-            case _  => ParserSuccess[Char](None, entrada.tail)
+            case "" => ParserFailure[Unit]("texto vacio")
+            case _  => ParserSuccess[Unit]((), entrada.tail)
         }
     }
 }
 
-class letter() extends Parser{
-     def apply(entrada: String): ParserOutput = {
+class letter() extends Parser[Char]{
+     def apply(entrada: String): ParserOutput[Char] = {
         entrada.toList match {
-            case List()               => ParserFailure("texto vacio")
-            case c :: s if c.isLetter => ParserSuccess[Char](Some(c), s.mkString)
-            case _                    => ParserFailure("no es una letra")
+            case List()               => ParserFailure[Char]("texto vacio")
+            case c :: s if c.isLetter => ParserSuccess[Char](c, s.mkString)
+            case _                    => ParserFailure[Char]("no es una letra")
         }
     }
 }
 
-class digit() extends Parser{
-    def apply(entrada: String): ParserOutput = {
+class digit() extends Parser[Char]{
+    def apply(entrada: String): ParserOutput[Char] = {
         entrada.toList match {
-            case List()              => ParserFailure("texto vacio")
-            case c :: s if c.isDigit => ParserSuccess[Char](Some(c), s.mkString)
-            case _                   => ParserFailure("no es un digito")
+            case List()              => ParserFailure[Char]("texto vacio")
+            case c :: s if c.isDigit => ParserSuccess[Char](c, s.mkString)
+            case _                   => ParserFailure[Char]("no es un digito")
         }
     }
 }
 
-class alphaNum() extends Parser{
-    def apply(entrada: String): ParserOutput = { 
-        var aux: (ParserOutput, ParserOutput) = (new letter()(entrada), new digit()(entrada))
+class alphaNum() extends Parser[Char]{
+    def apply(entrada: String): ParserOutput[Char] = { 
+        var aux: (ParserOutput[Char], ParserOutput[Char]) = (new letter()(entrada), new digit()(entrada))
         aux match {
             case (output1, _) if output1.isParserSuccess => aux._1
             case (_, output2) if output2.isParserSuccess => aux._2
-            case _                                       => ParserFailure("no es un caracter alfanumerico")
+            case _                                       => ParserFailure[Char]("no es un caracter alfanumerico")
         }
     }
 }
 
-class string(cadena: String) extends Parser{
-    def apply(entrada: String): ParserOutput = {
+class string(cadena: String) extends Parser[String]{
+    def apply(entrada: String): ParserOutput[String] = {
         val tamañoDeCadena: Integer = cadena.length
         val cadenaAParsear: String = entrada.take(tamañoDeCadena)
         if (cadena == "")
-            ParserFailure("cadena vacia")
+            ParserFailure[String]("cadena vacia")
         else if (cadenaAParsear == cadena)
-            ParserSuccess[String](Some(cadena), entrada.drop(tamañoDeCadena))
+            ParserSuccess[String](cadena, entrada.drop(tamañoDeCadena))
         else
-            ParserFailure("cadena incorrecta")
+            ParserFailure[String]("cadena incorrecta")
     }
 }
