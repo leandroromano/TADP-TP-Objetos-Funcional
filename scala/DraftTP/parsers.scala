@@ -87,49 +87,17 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
     def sepBy[A](parser: Parser[A]): Parser[List[T]] = {
         return new GenericParser[List[T]](((entrada: String) => {
             var retorno: List[T] = List()
-            val parserCompuesto = this <~ parser // Parsea con this y despues con el separador, devuelve solo lo de this.
-            var sobra: Stirng = ""
-            var parsed: ParserOutPut[T] = parserCompuesto(entrada)
+            val parserCompuesto = (parser ~> this)+ 
+            var parsed: ParserOutput[List[T]] = this.map(r => List(r))(entrada)
 
-            if (parsed.isParserSuccess) {   
-                do {
-                    
-
-                } while(sobra != "" && parsed.isParserSuccess)
-            } else {
-                parsed = parser(entrada)
-                parsed match {
-                    case ParserSuccess(res, sob) => ParserSuccess[List[T]](List(res), sob)
-                    case ParserFailure(message)  => ParserFailure[List[T]](message)
-                }
+            parsed match {
+                case ParserSuccess(rs, sobra) if parserCompuesto(sobra).isParserSuccess =>
+                    ParserSuccess[List[T]](rs ::: parserCompuesto(sobra).getResultado, parserCompuesto(sobra).getSobra)
+                case ParserFailure(message)                                             =>
+                    ParserFailure[List[T]](message)
+                case soloParseaUnSoloElemento                                           =>
+                    soloParseaUnSoloElemento
             }
-            
-
-           /* if (retornoContenido.isParserSuccess) {
-                var sobra: String = retornoContenido.getSobra
-                var usarParserSeparador: Boolean = true
-
-                retorno = retorno ::: List(retornoContenido.getResultado)
-                while (retornoContenido.isParserSuccess && sobra != "" ) {
-                    
-                    if(usarParserSeparador)
-                        retornoContenido = parserSeparador(sobra)
-                    else 
-                        retornoContenido = parserContenido(sobra)
-
-                    if(retornoContenido.isParserSuccess){
-                        retorno = retorno + retornoContenido.getResultado
-                        sobra = retornoContenido.getSobra
-                    }
-                                            
-                    usarParserSeparador = !usarParserSeparador
-                }
-
-                ParserSuccess[String](retorno, sobra)
-            } else {
-                retornoContenido
-            }
-            */
         }))
     }
 
