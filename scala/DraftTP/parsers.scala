@@ -78,7 +78,7 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
 
                 second match {
                     case ParserFailure(message)  => ParserFailure[T]("el segundo fallo: " + message)
-                    case ParserSuccess(_, sobra) => ParserSuccess[T](first.getResultado, sobra) // Devuelve la sobra del segundo?
+                    case ParserSuccess(_, sobra) => ParserSuccess[T](first.getResultado, sobra)
                 }
             }
         }))
@@ -131,13 +131,13 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
         }))
     }
 
-    def opt: Parser[T] = { // TODO: Hacer Optional
-        return new GenericParser[T](((entrada: String) => {
+    def opt: Parser[Optional[T]] = {
+        return new GenericParser[Optional[T]](((entrada: String) => {
             var retorno: ParserOutput[T] = this(entrada)
 
             retorno match {
-                case r if r.isParserSuccess => r
-                case _                      => ParserSuccess[T](().asInstanceOf[T], entrada) // <--- Que devuelve? Esto se ve feo
+                case ParserSuccess(value, sobra) => ParserSuccess[Optional[T]](Some(value), sobra)
+                case _                           => ParserSuccess[Optional[T]](None, entrada)
             }
         }))
     }
@@ -176,7 +176,16 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
         }))
     }
 
-    // def const(): Parser = ???
+    def const[A](parametro: A): Parser[A] = {  // Creo que es asi (?
+        return new GenericParser[A](((entrada: String) => {
+            val old: ParserOutPut[T] = this(entrada)
+
+            old match {
+                case ParserSuccess(_, sobra) => ParserSuccess[A](parametro, sobra)
+                case ParserFailure(message)  => ParserFailure[A](message)
+            }
+        }))
+    }
     
     def map[A](transformacion: T => A): Parser[A] = {
         return new GenericParser[A](((entrada: String) => {
