@@ -84,18 +84,32 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
         }))
     }
  // TODO: Devuelve una lista de elementos del 1er parser.
-    def sepBy[A](parser: Parser[A]): Parser[String] = { // Dudoso. Tiene como retorno un String? Recibe parsers de distintos tipos?
-        return new GenericParser[String](((entrada: String) => {
-            var parserContenido: Parser[String] = this.map(_.toString())
-            var parserSeparador: Parser[String] = parser.map(_.toString())
-            var retornoContenido: ParserOutput[String] = parserContenido(entrada)
-            var retorno: String = ""
+    def sepBy[A](parser: Parser[A]): Parser[List[T]] = {
+        return new GenericParser[List[T]](((entrada: String) => {
+            var retorno: List[T] = List()
+            val parserCompuesto = this <~ parser // Parsea con this y despues con el separador, devuelve solo lo de this.
+            var sobra: Stirng = ""
+            var parsed: ParserOutPut[T] = parserCompuesto(entrada)
 
-            if (retornoContenido.isParserSuccess) {
+            if (parsed.isParserSuccess) {   
+                do {
+                    
+
+                } while(sobra != "" && parsed.isParserSuccess)
+            } else {
+                parsed = parser(entrada)
+                parsed match {
+                    case ParserSuccess(res, sob) => ParserSuccess[List[T]](List(res), sob)
+                    case ParserFailure(message)  => ParserFailure[List[T]](message)
+                }
+            }
+            
+
+           /* if (retornoContenido.isParserSuccess) {
                 var sobra: String = retornoContenido.getSobra
                 var usarParserSeparador: Boolean = true
 
-                retorno = retornoContenido.getResultado
+                retorno = retorno ::: List(retornoContenido.getResultado)
                 while (retornoContenido.isParserSuccess && sobra != "" ) {
                     
                     if(usarParserSeparador)
@@ -115,8 +129,10 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
             } else {
                 retornoContenido
             }
+            */
         }))
     }
+
 
     // ---- Operaciones ----
 
@@ -131,13 +147,13 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
         }))
     }
 
-    def opt: Parser[Optional[T]] = {
-        return new GenericParser[Optional[T]](((entrada: String) => {
+    def opt: Parser[Option[T]] = {
+        return new GenericParser[Option[T]](((entrada: String) => {
             var retorno: ParserOutput[T] = this(entrada)
 
             retorno match {
-                case ParserSuccess(value, sobra) => ParserSuccess[Optional[T]](Some(value), sobra)
-                case _                           => ParserSuccess[Optional[T]](None, entrada)
+                case ParserSuccess(value, sobra) => ParserSuccess[Option[T]](Some(value), sobra)
+                case _                           => ParserSuccess[Option[T]](None, entrada)
             }
         }))
     }
@@ -178,7 +194,7 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
 
     def const[A](parametro: A): Parser[A] = {  // Creo que es asi (?
         return new GenericParser[A](((entrada: String) => {
-            val old: ParserOutPut[T] = this(entrada)
+            val old: ParserOutput[T] = this(entrada)
 
             old match {
                 case ParserSuccess(_, sobra) => ParserSuccess[A](parametro, sobra)
