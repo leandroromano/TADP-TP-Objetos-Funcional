@@ -83,12 +83,12 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
             }
         }))
     }
- // TODO: Devuelve una lista de elementos del 1er parser.
+
     def sepBy[A](parser: Parser[A]): Parser[List[T]] = {
         return new GenericParser[List[T]](((entrada: String) => {
             var retorno: List[T] = List()
             val parserCompuesto = (parser ~> this)+ 
-            var parsed: ParserOutput[List[T]] = this.map(r => List(r))(entrada)
+            var parsed: ParserOutput[List[T]] = this.map(r => List(r)).apply(entrada)
 
             parsed match {
                 case ParserSuccess(rs, sobra) if parserCompuesto(sobra).isParserSuccess =>
@@ -115,13 +115,13 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
         }))
     }
 
-    def opt: Parser[Option[T]] = {
-        return new GenericParser[Option[T]](((entrada: String) => {
+    def opt: Parser[T] = {
+        return new GenericParser[T](((entrada: String) => {
             var retorno: ParserOutput[T] = this(entrada)
 
             retorno match {
-                case ParserSuccess(value, sobra) => ParserSuccess[Option[T]](Some(value), sobra)
-                case _                           => ParserSuccess[Option[T]](None, entrada)
+                case ParserFailure(_) => ParserSuccess[T](().asInstanceOf[T], entrada)
+                case success          => success
             }
         }))
     }
