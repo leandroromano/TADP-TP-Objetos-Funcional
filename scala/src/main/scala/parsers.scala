@@ -1,5 +1,4 @@
-import scala.util.Try
-import scala.List
+
 
 class ParseErrorException(message: String) extends RuntimeException(message)
 
@@ -24,6 +23,7 @@ case class ParserFailure[T](message: String) extends ParserOutput[T] {
 sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
 
     def apply(entrada: String): ParserOutput[T]
+    def parse(input: String): ParserOutput[T] = apply(input)
 
     // ---- Combinators ----
 

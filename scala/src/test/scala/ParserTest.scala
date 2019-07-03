@@ -6,19 +6,19 @@ class MusicParserTest extends FreeSpec with Matchers {
     actualResult shouldBe(expectedResult)
   }
 
-  def assertParseFailed[T](actualResult: ⇒ T): Unit = {
-    assertThrows[ParseErrorExcetion](actualResult)
+  def assertParserFailed[T](actualResult: ⇒ T): Unit = {
+    assertThrows[ParseErrorException](actualResult)
   }
 
   "Parsers" - {
     "Any Char" - {
       "parses a char" in {
-        assertParsesSucceededWithResult(anyChar("hola").parse(), 'h')
+        assertParsesSucceededWithResult(new anyChar().parse("hola").getResultado, 'h')
       }
 
       "fails with empty string" - {
         "throws exception" in {
-          assertThrows[ParseErrorException]("texto vacio")(anyChar("").parse())
+          assertParserFailed("texto vacio")(new anyChar().parse("").getResultado)
         }
       }
     }
@@ -26,62 +26,62 @@ class MusicParserTest extends FreeSpec with Matchers {
     "char" - {
 
         "it parses a the first char" in {
-          assertParsesSucceededWithResult(char('h')("hola").parse(), 'h')
+          assertParsesSucceededWithResult(new char('h').parse("hola").getResultado, 'h')
         }
 
         "it fails to find the char" in {
-          assertThrows[ParseErrorException]("caracter incorrecto")(char('h')("chau").parse())
+          assertParserFailed("caracter incorrecto")(new char('h').parse("chau").getResultado)
         }
     }
 
 
     "void" - {
       "it parses Unit" in {
-        assertParsesSucceededWithResult(void("hola").parse(), Unit)
+        assertParsesSucceededWithResult(new void().parse("hola").getResultado, Unit)
       }
 
       "it fails" in {
-        assertThrows[ParseErrorException]("texto vacio")(void("chau").parse())
+        assertParserFailed("texto vacio")(new void().parse("").getResultado)
       }
     }
 
     "letter" - {
       "parses a letter" in {
-        assertParsesSucceededWithResult(letter("h").parse(), 'h')
+        assertParsesSucceededWithResult(new letter().parse("hola").getResultado, 'h')
       }
 
       "it fails when fed a number" in {
-        assertThrows[ParseErrorException]("no es una letra")(letter("1234").parse())
+        assertParserFailed("no es una letra")(new letter().parse("123").getResultado)
       }
     }
 
     "digit" - {
       "it fails when fed a letter" in {
-        assertThrows[ParseErrorException]("no es digito")(digit("hola").parse())
+        assertParserFailed("no es digito")(new digit().parse("hola").getResultado)
       }
 
       "it parses a digit" in {
-        assertParsesSucceededWithResult(digit("1234").parse(), 1)
+        assertParsesSucceededWithResult(new digit().parse("1234").getResultado, 1)
       }
     }
 
     "alphaNum" - {
       "parses an alphanumeric character" in {
-        assertParsesSucceededWithResult(alphaNum("h0l4").parse(), 'h')
+        assertParsesSucceededWithResult(new alphaNum().parse("h0l4").getResultado, 'h')
       }
 
       "fails for not alphanumeric" in {
-        assertThrows[ParseErrorException]("no es un caracter alfanumerico")(alphaNum("!").parse())
+        assertParserFailed("no es un caracter alfanumerico")(new alphaNum().parse("!").getResultado)
       }
     }
 
     "string" - {
       "parses a string character" in {
-        assertParsesSucceededWithResult(string("no andan")("no andan los tests").parse(), "no andan")
+        assertParsesSucceededWithResult(new string("no andan").parse("no andan los tests").getResultado, "no andan")
       }
 
       "fails for not alphanumeric" in {
-        assertThrows[ParseErrorException]("cadena incorrecta")(string("no andan")("si andan").parse())
+        assertParserFailed("cadena incorrecta")(new string("no andan").parse("si andan").getResultado)
       }
     }
   }
@@ -90,54 +90,56 @@ class MusicParserTest extends FreeSpec with Matchers {
 
 
     "OR Combinator" - {
-      val aob = char('a') <|> char('b')
+      val aob = new char('a') <|> new char('b')
 
       "parses with the first one" in {
-        assertParsesSucceededWithResult(aob("aloha").parse(), 'a')
+        assertParsesSucceededWithResult(aob.parse("aloha").getResultado, 'a')
       }
 
       "parses with the second one" in {
-        assertParsesSucceededWithResult(aob("bort").parse(), 'b')
+        assertParsesSucceededWithResult(aob.parse("bort").getResultado, 'b')
       }
 
-      "parser does not parse with either one" {
-        assertThrows[ParseErrorException]("todos fallan")(aob("no").parse())
+      "parser does not parse with either one" in {
+        assertParserFailed("todos fallan")(aob.parse("hola").getResultado)
       }
     }
 
     "Concat Combinator" - {
-      val holaMundo = string("hola") <> string("mundo")
+      val holaMundo = new string("hola") <> new string("mundo")
 
       "parses" in {
-        assertParsesSucceededWithResult(holaMundo("holamundo").parse(), ("hola", "mundo"))
+        assertParsesSucceededWithResult(holaMundo.parse("holamundo").getResultado, ("hola", "mundo"))
+      }
+
+      "fails" in {
+
       }
     }
 
     "Rightmost Combinator" - {
-      val rightMost = digit ~> alphaNum
+      val rightMost = new digit ~> new alphaNum
 
       "parses" in {
-        assertParsesSucceededWithResult(holaMundo("1abc").parse(), 'a')
+        assertParsesSucceededWithResult(rightMost.parse("4A").getResultado, 'A')
       }
 
-      "does not parse" in {
-        assertParsesSucceededWithResult(holaMundo("1abc").parse(), '1')
+      "fails" in {
+
       }
     }
 
     "Leftmost Combinator" - {
-      val rightMost = digit <~ alphaNum
+      val leftMost = new digit <~ new alphaNum
 
       "parses" in {
-        assertParsesSucceededWithResult(holaMundo("1abc").parse(), '1')
+        assertParsesSucceededWithResult(leftMost.parse("4abc"), '4')
       }
 
-      "does not parse" in {
-        assertParsesSucceededWithResult(holaMundo("1abc").parse(), 'a')
+      "fails" in {
+
       }
     }
-
-
 
   }
 }
