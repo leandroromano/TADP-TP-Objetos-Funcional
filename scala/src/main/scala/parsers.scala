@@ -28,18 +28,18 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
     // ---- Combinators ----
 
     def <|>(parser: Parser[T]): Parser[T] = {
-        return  new GenericParser[T](((entrada: String) => {
+        return  new GenericParser[T]((entrada: String) => {
             val aux: (ParserOutput[T], ParserOutput[T]) = (this(entrada), parser(entrada))
             aux match{
                 case (output1, _) if output1.isParserSuccess => output1
                 case (_, output2) if output2.isParserSuccess => output2
                 case _                                       => ParserFailure[T]("todos fallan")  
             }
-        }))
+        })
     }
 
     def <>[A](parser: Parser[A]): Parser[(T, A)] = { 
-        return new GenericParser[(T, A)](((entrada: String) => {
+        return new GenericParser[(T, A)]((entrada: String) => {
             val first: ParserOutput[T] = this(entrada)
             if(!first.isParserSuccess)
                 ParserFailure[(T, A)]("el primero fallo")
@@ -53,11 +53,11 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
                         ParserFailure[(T, A)]("el segundo fallo")
                 }
             }
-        }))
+        })
     }
 
     def ~>[A](parser: Parser[A]): Parser[A] = {
-        return new GenericParser[A](((entrada: String) => {
+        return new GenericParser[A]((entrada: String) => {
             var first: ParserOutput[T] = this(entrada)
         
             first match {
@@ -65,11 +65,11 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
                 case r                      => parser(r.getSobra)
             }
 
-        }))
+        })
     }
 
     def <~[A](parser: Parser[A]): Parser[T] = {
-        return new GenericParser[T](((entrada: String) => {
+        return new GenericParser[T]((entrada: String) => {
             var first: ParserOutput[T] = this(entrada)
             if (!first.isParserSuccess)
                 ParserFailure[T]("el primero fallo")
@@ -81,11 +81,11 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
                     case ParserSuccess(_, sobra) => ParserSuccess[T](first.getResultado, sobra)
                 }
             }
-        }))
+        })
     }
 
     def sepBy[A](parser: Parser[A]): Parser[List[T]] = {
-        return new GenericParser[List[T]](((entrada: String) => {
+        return new GenericParser[List[T]]((entrada: String) => {
             var retorno: List[T] = List()
             val parserCompuesto = (parser ~> this)+ 
             var parsed: ParserOutput[List[T]] = this.map(r => List(r)).apply(entrada)
@@ -98,7 +98,7 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
                 case soloParseaUnSoloElemento                                           =>
                     soloParseaUnSoloElemento
             }
-        }))
+        })
     }
 
 
@@ -106,28 +106,28 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
 
     type Condicion = String => Boolean
     def satisfies(condicion: Condicion): Parser[T] = {
-        return new GenericParser[T](((entrada: String) => {
+        return new GenericParser[T]((entrada: String) => {
             var retorno: ParserOutput[T] = this(entrada)
             retorno match {
                 case _ if !condicion(entrada) => ParserFailure[T]("no se cumple condicion de entrada")
                 case r                        => r
             }
-        }))
+        })
     }
 
     def opt: Parser[T] = {
-        return new GenericParser[T](((entrada: String) => {
+        return new GenericParser[T]((entrada: String) => {
             var retorno: ParserOutput[T] = this(entrada)
 
             retorno match {
                 case ParserFailure(_) => ParserSuccess[T](().asInstanceOf[T], entrada)
                 case success          => success
             }
-        }))
+        })
     }
 
     def *(): Parser[List[T]] = {
-        return new GenericParser[List[T]](((entrada: String) => {
+        return new GenericParser[List[T]]((entrada: String) => {
             var retorno: List[ParserOutput[T]] = List()
             var output: ParserOutput[T] = this(entrada)
 
@@ -140,11 +140,11 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
                 }
                 ParserSuccess[List[T]](retorno.map(_.getResultado), retorno.last.getSobra)
             }    
-        }))
+        })
     }
 
     def +(): Parser[List[T]] =  {
-        return new GenericParser[List[T]](((entrada: String) => {
+        return new GenericParser[List[T]]((entrada: String) => {
             var retorno: List[ParserOutput[T]] = List()
             var output: ParserOutput[T] = this(entrada)
 
@@ -157,29 +157,29 @@ sealed trait Parser[T] extends ((String) => ParserOutput[T]) {
                 }
                 ParserSuccess[List[T]](retorno.map(_.getResultado), retorno.last.getSobra)
             }
-        }))
+        })
     }
 
     def const[A](parametro: A): Parser[A] = {  // Creo que es asi (?
-        return new GenericParser[A](((entrada: String) => {
+        return new GenericParser[A]((entrada: String) => {
             val old: ParserOutput[T] = this(entrada)
 
             old match {
                 case ParserSuccess(_, sobra) => ParserSuccess[A](parametro, sobra)
                 case ParserFailure(message)  => ParserFailure[A](message)
             }
-        }))
+        })
     }
     
     def map[A](transformacion: T => A): Parser[A] = {
-        return new GenericParser[A](((entrada: String) => {
+        return new GenericParser[A]((entrada: String) => {
             val old: ParserOutput[T] = this(entrada)
 
             old match {
                 case ParserSuccess(retorno, sobra) => ParserSuccess[A](transformacion(retorno), sobra)
                 case ParserFailure(message) => ParserFailure[A](message)
             }
-        }))
+        })
     }
 }
 

@@ -18,7 +18,7 @@ class ParserTest extends FreeSpec with Matchers {
 
       "fails with empty string" - {
         "throws exception" in {
-          assertParserFailed("texto vacio")(new anyChar().parse("").getResultado)
+          assertParserFailed(new anyChar().parse("").getResultado)
         }
       }
     }
@@ -30,18 +30,18 @@ class ParserTest extends FreeSpec with Matchers {
         }
 
         "it fails to find the char" in {
-          assertParserFailed("caracter incorrecto")(new char('h').parse("chau").getResultado)
+          assertParserFailed(new char('h').parse("chau").getResultado)
         }
     }
 
 
     "void" - {
       "it parses Unit" in {
-        assertParsesSucceededWithResult(new void().parse("hola").getResultado, Unit)
+        assertParsesSucceededWithResult(new void().parse("hola").getResultado, ())
       }
 
       "it fails" in {
-        assertParserFailed("texto vacio")(new void().parse("").getResultado)
+        assertParserFailed(new void().parse("").getResultado)
       }
     }
 
@@ -51,17 +51,17 @@ class ParserTest extends FreeSpec with Matchers {
       }
 
       "it fails when fed a number" in {
-        assertParserFailed("no es una letra")(new letter().parse("123").getResultado)
+        assertParserFailed(new letter().parse("123").getResultado)
       }
     }
 
     "digit" - {
-      "it fails when fed a letter" in {
-        assertParserFailed("no es digito")(new digit().parse("hola").getResultado)
+      "it parses a digit" in {
+        assertParsesSucceededWithResult(new digit().parse("1234").getResultado, '1')
       }
 
-      "it parses a digit" in {
-        assertParsesSucceededWithResult(new digit().parse("1234").getResultado, 1)
+      "it fails when fed a letter" in {
+        assertParserFailed(new digit().parse("hola").getResultado)
       }
     }
 
@@ -71,7 +71,7 @@ class ParserTest extends FreeSpec with Matchers {
       }
 
       "fails for not alphanumeric" in {
-        assertParserFailed("no es un caracter alfanumerico")(new alphaNum().parse("!").getResultado)
+        assertParserFailed(new alphaNum().parse("!").getResultado)
       }
     }
 
@@ -81,7 +81,7 @@ class ParserTest extends FreeSpec with Matchers {
       }
 
       "fails for not alphanumeric" in {
-        assertParserFailed("cadena incorrecta")(new string("no andan").parse("si andan").getResultado)
+        assertParserFailed(new string("no andan").parse("si andan").getResultado)
       }
     }
   }
@@ -101,7 +101,7 @@ class ParserTest extends FreeSpec with Matchers {
       }
 
       "parser does not parse with either one" in {
-        assertParserFailed("todos fallan")(aob.parse("hola").getResultado)
+        assertParserFailed(aob.parse("hola").getResultado)
       }
     }
 
@@ -113,7 +113,7 @@ class ParserTest extends FreeSpec with Matchers {
       }
 
       "fails" in {
-
+        assertParserFailed(holaMundo.parse("chaumundo").getResultado)
       }
     }
 
@@ -125,7 +125,7 @@ class ParserTest extends FreeSpec with Matchers {
       }
 
       "fails" in {
-
+        assertParserFailed(rightMost.parse("a23b").getResultado)
       }
     }
 
@@ -133,11 +133,11 @@ class ParserTest extends FreeSpec with Matchers {
       val leftMost = new digit <~ new alphaNum
 
       "parses" in {
-        assertParsesSucceededWithResult(leftMost.parse("4abc"), '4')
+        assertParsesSucceededWithResult(leftMost.parse("4abc").getResultado, '4')
       }
 
       "fails" in {
-
+        assertParserFailed(leftMost.parse("a23b").getResultado)
       }
     }
 
