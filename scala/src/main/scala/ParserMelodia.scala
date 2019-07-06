@@ -145,9 +145,7 @@ package object ParserMelodia {
     case object ParserMelodia extends Parser[Melodia] {
         def apply(entrada: String): ParserOutput[Melodia] = {
             val pureParser: Parser[Melodia] =
-                (ParserSilencio().asInstanceOf[Parser[Tocable]] <|>
-                    ParserSonido().asInstanceOf[Parser[Tocable]] <|>
-                        ParserAcorde().asInstanceOf[Parser[Tocable]]).sepBy(new char(' '))
+                (ParserSilencio() <|> ParserSonido() <|> ParserAcorde()).sepBy(new char(' '))
 
             pureParser(entrada)
         }

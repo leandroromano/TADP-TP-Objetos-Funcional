@@ -2,43 +2,41 @@
 package object Parsers {
     class ParseErrorException(message: String) extends RuntimeException(message)
 
-    trait ParserOutput[T] {
+    trait ParserOutput[+T] {
         def isParserSuccess: Boolean
         def getSobra: String
         def getResultado: T
     }
 
-    case class ParserSuccess[T](resultado: T, sobra: String) extends ParserOutput[T] {
+    case class ParserSuccess[+T](resultado: T, sobra: String) extends ParserOutput[T] {
         def getResultado: T = resultado
         def getSobra: String = sobra
         def isParserSuccess: Boolean = true
     }
 
-    case class ParserFailure[T](message: String) extends ParserOutput[T] {
+    case class ParserFailure[+T](message: String) extends ParserOutput[T] {
         def getResultado = throw new ParseErrorException(message)
         def getSobra =  throw new ParseErrorException(message)
         def isParserSuccess: Boolean = false
     }
 
-    trait Parser[T] extends ((String) => ParserOutput[T]) {
+    trait Parser[+T] extends ((String) => ParserOutput[T]) {
 
         def apply(entrada: String): ParserOutput[T]
         def parse(input: String): ParserOutput[T] = apply(input)
 
         // ---- Combinators ----
 
-        def <|>(parser: Parser[T]): Parser[T] = {
-            return  new GenericParser[T]((entrada: String) => {
-                val aux: (ParserOutput[T], ParserOutput[T]) = (this(entrada), parser(entrada))
-                aux match{
+        def <|>[U >: T](parser: Parser[U]): Parser[U] =
+            new GenericParser[U]((entrada: String) => {
+                (this (entrada), parser(entrada)) match{
                     case (output1, _) if output1.isParserSuccess => output1
                     case (_, output2) if output2.isParserSuccess => output2
-                    case _                                       => ParserFailure[T]("todos fallan")
+                    case (ParserFailure(m1), ParserFailure(m2))                                       => ParserFailure[T](s"todos fallan: $m1, $m2.")
                 }
             })
-        }
 
-        def <>[A](parser: Parser[A]): Parser[(T, A)] = { 
+        def <>[A](parser: Parser[A]): Parser[(T, A)] = {
             return new GenericParser[(T, A)]((entrada: String) => {
                 val first: ParserOutput[T] = this(entrada)
                 if(!first.isParserSuccess)
