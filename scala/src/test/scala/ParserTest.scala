@@ -1,10 +1,12 @@
 
 import org.scalatest.{FreeSpec, Matchers}
 import Parsers._
+import ParserMelodia._
+import Musica._
 
 class ParserTest extends FreeSpec with Matchers {
   def assertParsesSucceededWithResult[T](actualResult: T, expectedResult: T): Unit = {
-    actualResult shouldBe(expectedResult)
+    actualResult shouldBe expectedResult
   }
 
   def assertParserFailed[T](actualResult: ⇒ T): Unit = {
@@ -225,12 +227,56 @@ class ParserTest extends FreeSpec with Matchers {
 
 
      }
+  }
 
+  "Musiquita" - {
 
+    "ParserSilencio" - {
 
+      "parsea correctamente un silencio de blanca" in {
+        assertParsesSucceededWithResult(ParserSilencio().parse("_").getResultado, Silencio(Blanca))
+      }
 
+      "parsea correctamente un silencio de negra" in {
+        assertParsesSucceededWithResult(ParserSilencio().parse("-").getResultado, Silencio(Negra))
+      }
 
+      "parsea correctamente un silencio de corchea" in {
+        assertParsesSucceededWithResult(ParserSilencio().parse("~").getResultado, Silencio(Corchea))
+      }
 
+      "falla cuando trata de parsear algo que no es un silencio" in {
+        assertParserFailed(ParserSilencio().parse("no soy un silencio").getResultado)
+      }
+
+    }
+
+    "ParserSonido" - {
+
+      "parsea correctamente un sonido con semitono" in {
+        assertParsesSucceededWithResult(ParserSonido().parse("6A#1/4").getResultado, Sonido(Tono(6, As), Negra))
+      }
+
+      "parsea correctamente un sonido sin semitono" in {
+        assertParsesSucceededWithResult(ParserSonido().parse("6A1/4").getResultado, Sonido(Tono(6, A), Negra))
+      }
+
+      "falla cuando parsea algo que no es un sonido" in {
+        assertParserFailed(ParserSonido().parse("no soy un sonido").getResultado)
+      }
+
+    }
+
+    "ParserAcorde" - {
+
+      "parsea correctamente un acorde explícito" in {
+        assertParsesSucceededWithResult(ParserAcorde().parse("6A+6C#+6G1/8").getResultado, Acorde(List(Tono(6, A), Tono(6, Cs), Tono(6, G)), Corchea))
+      }
+
+      "parsea correctamente un acorde implicito" in {
+        assertParsesSucceededWithResult(ParserAcorde().parse("6AM1/2").getResultado, A.acordeMayor(6, Blanca))
+      }
+    }
 
   }
 }

@@ -33,7 +33,7 @@ package object Parsers {
                 aux match{
                     case (output1, _) if output1.isParserSuccess => output1
                     case (_, output2) if output2.isParserSuccess => output2
-                    case _                                       => ParserFailure[T]("todos fallan")  
+                    case _                                       => ParserFailure[T]("todos fallan")
                 }
             })
         }

@@ -1,5 +1,6 @@
 import Parsers._
 import Musica._
+import scala.util._
 
 package object ParserMelodia {
 
@@ -42,7 +43,7 @@ package object ParserMelodia {
         }
     }
 
-    case class ParserNota() extends Parser[Nota]{
+    case class ParserNota() extends Parser[Nota]{  // <-- ACA FALLA
         def apply(entrada: String): ParserOutput[Nota] = {
             val pureParser: Parser[(Char, Char)] =
                 new letter() <> (new char('#') <|> new char('b')).opt
@@ -52,10 +53,12 @@ package object ParserMelodia {
             pureResult match {
                 case ParserSuccess((posibleNota, modificador), sobra) if Nota.notas.map(_.toString).contains(posibleNota.toString) => {
                     val trueNote = Nota.notas(Nota.notas.map(_.toString).indexOf(posibleNota.toString))
-                    modificador match {
-                        case 'b' => ParserSuccess[Nota](trueNote.bemol, sobra)
-                        case '#' => ParserSuccess[Nota](trueNote.sostenido, sobra)
-                        case  _  => ParserSuccess[Nota](trueNote, sobra)
+                    val tryModificador: Try[Char] = Try(modificador) // <-- INTENTO DESESPERADO (?
+
+                    tryModificador match {
+                        case Success('b') => ParserSuccess[Nota](trueNote.bemol, sobra)
+                        case Success('#') => ParserSuccess[Nota](trueNote.sostenido, sobra)
+                        case Failure(_)   => ParserSuccess[Nota](trueNote, sobra)
                     }
                 }
                 case _ => ParserFailure[Nota]("no es una nota")
@@ -138,15 +141,17 @@ package object ParserMelodia {
 
 
     // type Melodia = List(Tocable)      Tocable = Silencio / Sonido / Acorde
+    //
+    /*
     case object ParserMelodia extends Parser[Melodia] {
         def apply(entrada: String): ParserOutput[Melodia] = {
             val pureParser: Parser[Melodia] =
-                ((ParserSilencio().asInstanceOf[Parser[Tocable]] <|>
-                    ParserSonido().asInstanceOf[Parser[Tocable]]) <|>
-                        ParserAcorde().asInstanceOf[Parser[Tocable]]).sepBy(new char(' '))
+                (ParserSilencio() <|>
+                    ParserSonido() <|>
+                        ParserAcorde()).sepBy(new char(' '))
 
             pureParser(entrada)
         }
     }
-
+*/
 }

@@ -8,5 +8,5 @@ object PlayAudio extends App {
 
 
 
-  AudioPlayer.reproducir(ParserMelodia.parse(fc).getResultado)
+  //AudioPlayer.reproducir(ParserMelodia.parse(fc).getResultado)
 }
