@@ -85,6 +85,7 @@ class ParserTest extends FreeSpec with Matchers {
         assertParserFailed(new string("no andan").parse("si andan").getResultado)
       }
     }
+
   }
 
   "Combinators" - {
@@ -141,6 +142,95 @@ class ParserTest extends FreeSpec with Matchers {
         assertParserFailed(leftMost.parse("a23b").getResultado)
       }
     }
+
+    "satifies" - {
+      val mayoresA5 = new digit satisfies (p => p.toInt > 5)
+      "parses when condition is met" in {
+        assertParsesSucceededWithResult(mayoresA5.parse("6").getResultado, '6')
+      }
+
+      "fails when condition is not met" in {
+        assertParserFailed(mayoresA5.parse("4").getResultado)
+      }
+    }
+
+    "opt" - {
+      val talVezIn = string("in").opt
+      val precedencia = talVezIn <> string("fija")
+
+      "ignores the optional parse" in {
+        assertParsesSucceededWithResult(precedencia.parse("fija").getResultado, ((), "fija"))
+      }
+
+      "parses with the optional" in {
+        assertParsesSucceededWithResult(precedencia.parse("infija").getResultado, ("in", "fija"))
+      }
+    }
+
+    "* - kleene" - {
+      val infiniteDigits = digit().*()
+
+      "parses all digits" in {
+        assertParsesSucceededWithResult(infiniteDigits.parse("1234").getResultado, List('1', '2', '3', '4'))
+      }
+
+      "gets an empty list if not found" in {
+        assertParsesSucceededWithResult(infiniteDigits.parse("hola").getResultado, List())
+      }
+    }
+
+    "+ - positive" - {
+      val infiniteDigits = digit().+()
+
+      "parses all digits" in {
+        assertParsesSucceededWithResult(infiniteDigits.parse("1234").getResultado, List('1', '2', '3', '4'))
+      }
+
+      "gets at least one" in {
+        assertParsesSucceededWithResult(infiniteDigits.parse("1hola").getResultado, List('1'))
+      }
+    }
+
+    "sepBy" - {
+
+      val numeroSeparadoPorGuion = digit().sepBy(char('-'))
+
+      "parses respecting the separator" in {
+        assertParsesSucceededWithResult(numeroSeparadoPorGuion .parse("1-1").getResultado, List('1','1'))
+      }
+
+      "fails if separator not found" in {
+        assertParsesSucceededWithResult(numeroSeparadoPorGuion .parse("4 4").getResultado, List('4'))
+      }
+    }
+
+    "const" - {
+      val trueParser = string("true").const(true)
+
+      "parses overriding the parsed" in {
+        assertParsesSucceededWithResult(trueParser.parse("true").getResultado, true)
+      }
+    }
+
+     "map" - {
+       type String = List[Char]
+       case class Punto(nombre: Int, apellido: Int)
+       val personaParser = (digit() <> (char(';') ~> digit()))
+         .map { case (x, y) => Punto(x.asDigit, y.asDigit) }
+
+       "makes a Point" in {
+         assertParsesSucceededWithResult(personaParser.parse("1;2").getResultado, Punto(1,2))
+
+       }
+
+
+     }
+
+
+
+
+
+
 
   }
 }

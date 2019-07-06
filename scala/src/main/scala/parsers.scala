@@ -260,4 +260,19 @@ package object Parsers {
                 ParserFailure[String]("cadena incorrecta")
         }
     }
+
+    object string {
+        def apply(cadena: String): string = new string(cadena)
+    }
+
+    object digit {
+        def apply(): digit = new digit()
+    }
+
+    object char {
+        def apply(caracter: Char): char = new char(caracter)
+    }
+
+
+
 }
