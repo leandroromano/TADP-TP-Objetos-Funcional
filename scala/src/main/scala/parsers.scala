@@ -115,13 +115,13 @@ package object Parsers {
             })
         }
 
-        def opt: Parser[T] = {
-            return new GenericParser[T]((entrada: String) => {
+        def opt: Parser[Option[T]] = {
+            return new GenericParser[Option[T]]((entrada: String) => {
                 var retorno: ParserOutput[T] = this(entrada)
 
                 retorno match {
-                    case ParserFailure(_) => ParserSuccess[T](().asInstanceOf[T], entrada)
-                    case success          => success
+                    case ParserFailure(_)        => ParserSuccess[Option[T]](None, entrada)
+                    case ParserSuccess(res, sob) => ParserSuccess[Option[T]](Some(res), sob)
                 }
             })
         }

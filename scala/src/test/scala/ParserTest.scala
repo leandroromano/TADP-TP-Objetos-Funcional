@@ -161,11 +161,11 @@ class ParserTest extends FreeSpec with Matchers {
       val precedencia = talVezIn <> string("fija")
 
       "ignores the optional parse" in {
-        assertParsesSucceededWithResult(precedencia.parse("fija").getResultado, ((), "fija"))
+        assertParsesSucceededWithResult(precedencia.parse("fija").getResultado, (None, "fija"))
       }
 
       "parses with the optional" in {
-        assertParsesSucceededWithResult(precedencia.parse("infija").getResultado, ("in", "fija"))
+        assertParsesSucceededWithResult(precedencia.parse("infija").getResultado, (Some("in"), "fija"))
       }
     }
 

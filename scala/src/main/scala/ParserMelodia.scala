@@ -45,20 +45,19 @@ package object ParserMelodia {
 
     case class ParserNota() extends Parser[Nota]{  // <-- ACA FALLA
         def apply(entrada: String): ParserOutput[Nota] = {
-            val pureParser: Parser[(Char, Char)] =
+            val pureParser: Parser[(Char, Option[Char])] =
                 new letter() <> (new char('#') <|> new char('b')).opt
 
-            val pureResult: ParserOutput[(Char, Char)] = pureParser(entrada)
+            val pureResult: ParserOutput[(Char, Option[Char])] = pureParser(entrada)
 
             pureResult match {
                 case ParserSuccess((posibleNota, modificador), sobra) if Nota.notas.map(_.toString).contains(posibleNota.toString) => {
                     val trueNote = Nota.notas(Nota.notas.map(_.toString).indexOf(posibleNota.toString))
-                    val tryModificador: Try[Char] = Try(modificador) // <-- INTENTO DESESPERADO (?
 
-                    tryModificador match {
-                        case Success('b') => ParserSuccess[Nota](trueNote.bemol, sobra)
-                        case Success('#') => ParserSuccess[Nota](trueNote.sostenido, sobra)
-                        case Failure(_)   => ParserSuccess[Nota](trueNote, sobra)
+                    modificador match {
+                        case Some('b') => ParserSuccess[Nota](trueNote.bemol, sobra)
+                        case Some('#') => ParserSuccess[Nota](trueNote.sostenido, sobra)
+                        case None   => ParserSuccess[Nota](trueNote, sobra)
                     }
                 }
                 case _ => ParserFailure[Nota]("no es una nota")
@@ -142,7 +141,7 @@ package object ParserMelodia {
 
     // type Melodia = List(Tocable)      Tocable = Silencio / Sonido / Acorde
     //
-    /*
+
     case object ParserMelodia extends Parser[Melodia] {
         def apply(entrada: String): ParserOutput[Melodia] = {
             val pureParser: Parser[Melodia] =
@@ -153,5 +152,5 @@ package object ParserMelodia {
             pureParser(entrada)
         }
     }
-*/
+
 }
