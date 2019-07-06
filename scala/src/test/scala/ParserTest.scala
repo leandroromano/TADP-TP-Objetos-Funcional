@@ -278,6 +278,12 @@ class ParserTest extends FreeSpec with Matchers {
       }
     }
 
+    "ParserMelodia" - {
+      "parsea correctamente una melodia con un acorde explicito, uno implicito, un tono y un silencio" in {
+        assertParsesSucceededWithResult(ParserMelodia.parse("6A+6C#+6G1/8 6AM1/2 6A#1/1 -").getResultado, List[Tocable](Acorde(List(Tono(6, A), Tono(6, Cs), Tono(6, G)), Corchea), A.acordeMayor(6, Blanca), Sonido(Tono(6, As), Redonda), Silencio(Negra)))
+      }
+    }
+
   }
 }
 
